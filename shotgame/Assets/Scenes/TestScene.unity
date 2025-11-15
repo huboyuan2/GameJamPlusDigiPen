@@ -225,7 +225,7 @@ PrefabInstance:
     - target: {fileID: 3830342987225073666, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 859247199}
+      objectReference: {fileID: 2008209623}
     - target: {fileID: 4343533482777308276, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -419,6 +419,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
+--- !u!114 &709082609 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3830342987225073666, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
+  m_PrefabInstance: {fileID: 497420089}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b63ee04936b7a5043a2daedfef852b63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &859247197
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,7 +510,7 @@ MonoBehaviour:
   useScreenBounds: 1
   minBounds: {x: -10, y: -10}
   maxBounds: {x: 10, y: 10}
-  visualTransform: {fileID: 0}
+  visualTransform: {fileID: 2008209623}
   jumpHeight: 1.5
   jumpDuration: 0.5
   jumpKey: 32
@@ -519,8 +530,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a23a049067c90eb4080a7d848119d756, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 0
-  healthBar: {fileID: 0}
+  maxHp: 100
+  healthBar: {fileID: 709082609}
 --- !u!1 &1048801587
 GameObject:
   m_ObjectHideFlags: 0
