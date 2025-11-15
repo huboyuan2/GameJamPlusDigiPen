@@ -1,0 +1,37 @@
+Exploration. Gain speed, jump over obstacles.
+
+THEME: Small scope big fun
+EXAMPLES OF THEME: Don’t Push The Button, There is No Game, Luck be a Landlord, Snake RX, Baba is You, Vampire Survivors.
+
+GAME DESIGN: 
+- Arcade
+- Survival (Simple start, death, restart loop) 
+- Sidescroller - screen forces player to the right
+
+
+Side scroller
+Infinite runner
+Move to the right
+Jump
+Dash 
+Shoot: w/ shotgun and grapple hook
+Enemies 
+Shotgun to kill enemies
+Shotgun to jump
+Killing enemies gives player shotgun shells 
+Lanes
+Lane based movement
+
+
+Player actions
+Switch lanes
+Shoot
+Jump
+
+
+
+actions:
+1 Switch lane
+2 jump
+3 shoot
+4 dash
