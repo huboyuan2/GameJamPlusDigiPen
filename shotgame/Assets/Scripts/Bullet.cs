@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
-    public float lifeTime = 2000f;
+    public float lifeTime = 2f;
     Rigidbody2D rb;
     
     // Start is called before the first frame update

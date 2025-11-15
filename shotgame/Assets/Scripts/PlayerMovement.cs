@@ -21,15 +21,18 @@ public class PlayerMovement : MonoBehaviour
     public float jumpDuration = 0.5f;
     public KeyCode jumpKey = KeyCode.Space;
     public bool isJumping = false;
-
+    
     private Tween jumpTween;
     [Header("Shoot Settings")]
     public List<GameObject> bulletPrefabs;
+    public List<int> bulletCounts;
     private Vector3 shootPoint;
     public float bulletSpeed = 10f;
-
+    public int gunindex = 0;
+    public bool isDebugging = true;
     void Start()
     {
+        BulletUI.Instance.BulletCount = bulletCounts[gunindex];
         rb = GetComponent<Rigidbody2D>();
         // Key settings: disable gravity, freeze Z rotation
         rb.gravityScale = 0f;
@@ -80,16 +83,38 @@ public class PlayerMovement : MonoBehaviour
         shootPoint.z = 0f; // important for 2D
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject bulletPrefab = bulletPrefabs[0];
-            if (bulletPrefab != null)
+            if (gunindex > bulletCounts.Count || gunindex > bulletPrefabs.Count)
+                return;
+            if (bulletCounts[gunindex] > 0)
             {
-                GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-                Vector2 shootDirection = (shootPoint - transform.position).normalized;
-                Bullet bulletScript = bullet.GetComponent<Bullet>();
-                if (bulletScript != null)
+                bulletCounts[gunindex]--;
+                BulletUI.Instance.BulletCount = bulletCounts[gunindex];
+                GameObject bulletPrefab = bulletPrefabs[gunindex];
+                if (bulletPrefab != null)
                 {
-                    bulletScript.SetDirection(shootDirection);
+                    Vector3 shootpos;
+                    if (visualTransform != null)
+                        shootpos = visualTransform.position;
+                    else
+                        shootpos = transform.position;
+
+                    GameObject bullet = Instantiate(bulletPrefab, shootpos, Quaternion.identity);
+                    Vector2 shootDirection = (shootPoint - shootpos).normalized;
+                    Bullet bulletScript = bullet.GetComponent<Bullet>();
+                    if (bulletScript != null)
+                    {
+                        bulletScript.SetDirection(shootDirection);
+                    }
+
                 }
+            }
+        }
+        if (isDebugging)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                bulletCounts[gunindex] = 10;
+                BulletUI.Instance.BulletCount = bulletCounts[gunindex];
             }
         }
     }
