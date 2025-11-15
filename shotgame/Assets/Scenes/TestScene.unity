@@ -559,7 +559,8 @@ MonoBehaviour:
   isJumping: 0
   bulletPrefabs:
   - {fileID: 4405380878580714090, guid: a4f765e4abc5d8242ae735f9262c9b2a, type: 3}
-  bulletCounts: 0a000000
+  - {fileID: 4405380878580714090, guid: 96f183c39f9bf8d43848f379989a940d, type: 3}
+  bulletCounts: 0a0000000a000000
   bulletSpeed: 10
   gunindex: 0
   isDebugging: 1
