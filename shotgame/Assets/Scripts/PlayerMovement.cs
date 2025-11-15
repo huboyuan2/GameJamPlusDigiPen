@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -34,6 +35,9 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Knockback Settings")]
     public float knockbackDecay = 5f; // How fast knockback decays
+
+    // Event triggered when player shoots, passes gunindex
+    public static Action<int> OnShoot;
 
     void Start()
     {
@@ -145,6 +149,8 @@ public class PlayerMovement : MonoBehaviour
                         }
                     }
 
+                    // Invoke shoot event
+                    OnShoot?.Invoke(gunindex);
                 }
             }
         }
