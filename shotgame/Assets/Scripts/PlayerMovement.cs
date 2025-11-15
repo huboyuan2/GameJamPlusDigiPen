@@ -1,5 +1,7 @@
-using UnityEngine;
 using DG.Tweening;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -21,6 +23,10 @@ public class PlayerMovement : MonoBehaviour
     public bool isJumping = false;
 
     private Tween jumpTween;
+    [Header("Shoot Settings")]
+    public List<GameObject> bulletPrefabs;
+    private Vector3 shootPoint;
+    public float bulletSpeed = 10f;
 
     void Start()
     {
@@ -69,6 +75,22 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(jumpKey) && !isJumping)
         {
             PerformJump();
+        }
+        shootPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        shootPoint.z = 0f; // important for 2D
+        if (Input.GetMouseButtonDown(0))
+        {
+            GameObject bulletPrefab = bulletPrefabs[0];
+            if (bulletPrefab != null)
+            {
+                GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+                Vector2 shootDirection = (shootPoint - transform.position).normalized;
+                Bullet bulletScript = bullet.GetComponent<Bullet>();
+                if (bulletScript != null)
+                {
+                    bulletScript.SetDirection(shootDirection);
+                }
+            }
         }
     }
 
