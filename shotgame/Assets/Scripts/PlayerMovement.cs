@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -8,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 moveInput;
+    private Vector2 knockbackVelocity; // Store knockback velocity
 
     [Header("Movement Boundaries")]
     public bool useBoundaries = true;
@@ -25,11 +27,21 @@ public class PlayerMovement : MonoBehaviour
     private Tween jumpTween;
     [Header("Shoot Settings")]
     public List<GameObject> bulletPrefabs;
+    public List<int> bulletCounts;
     private Vector3 shootPoint;
     public float bulletSpeed = 10f;
+    public int gunindex = 0;
+    public bool isDebugging = true;
+
+    [Header("Knockback Settings")]
+    public float knockbackDecay = 5f; // How fast knockback decays
+
+    // Event triggered when player shoots, passes gunindex
+    public static Action<int> OnShoot;
 
     void Start()
     {
+        BulletUI.Instance.BulletCount = bulletCounts[gunindex];
         rb = GetComponent<Rigidbody2D>();
         // Key settings: disable gravity, freeze Z rotation
         rb.gravityScale = 0f;
@@ -76,28 +88,90 @@ public class PlayerMovement : MonoBehaviour
         {
             PerformJump();
         }
+        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+        if (scrollInput != 0f && bulletPrefabs.Count > 0 && bulletCounts.Count > 0)
+        {
+            int maxIndex = Mathf.Min(bulletPrefabs.Count, bulletCounts.Count) - 1;
+
+            if (scrollInput > 0f)
+            {
+                // Scroll up - next weapon
+                gunindex++;
+                if (gunindex > maxIndex)
+                {
+                    gunindex = 0; // Wrap to first weapon
+                }
+            }
+            else if (scrollInput < 0f)
+            {
+                // Scroll down - previous weapon
+                gunindex--;
+                if (gunindex < 0)
+                {
+                    gunindex = maxIndex; // Wrap to last weapon
+                }
+            }
+
+            // Update UI when weapon changes
+            BulletUI.Instance.BulletCount = bulletCounts[gunindex];
+            Debug.Log($"Switched to weapon {gunindex}");
+        }
         shootPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         shootPoint.z = 0f; // important for 2D
         if (Input.GetMouseButtonDown(0))
         {
-            GameObject bulletPrefab = bulletPrefabs[0];
-            if (bulletPrefab != null)
+            if (gunindex > bulletCounts.Count || gunindex > bulletPrefabs.Count)
+                return;
+            if (bulletCounts[gunindex] > 0)
             {
-                GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-                Vector2 shootDirection = (shootPoint - transform.position).normalized;
-                Bullet bulletScript = bullet.GetComponent<Bullet>();
-                if (bulletScript != null)
+                bulletCounts[gunindex]--;
+                BulletUI.Instance.BulletCount = bulletCounts[gunindex];
+                GameObject bulletPrefab = bulletPrefabs[gunindex];
+                if (bulletPrefab != null)
                 {
-                    bulletScript.SetDirection(shootDirection);
+                    Vector3 shootpos;
+                    if (visualTransform != null)
+                        shootpos = visualTransform.position;
+                    else
+                        shootpos = transform.position;
+
+                    GameObject bullet = Instantiate(bulletPrefab, shootpos, Quaternion.identity);
+                    Vector2 shootDirection = (shootPoint - shootpos).normalized;
+                    Bullet bulletScript = bullet.GetComponent<Bullet>();
+                    if (bulletScript != null)
+                    {
+                        bulletScript.SetDirection(shootDirection);
+                        if (bulletScript.oppositeForceStrength >= 0.1f)
+                        {
+                            // Apply knockback velocity (not AddForce, since we're overriding velocity in FixedUpdate)
+                            knockbackVelocity += -shootDirection * bulletScript.oppositeForceStrength;
+                            Debug.Log($"Knockback applied: {knockbackVelocity.magnitude}");
+                        }
+                    }
+
+                    // Invoke shoot event
+                    OnShoot?.Invoke(gunindex);
                 }
+            }
+        }
+        if (isDebugging)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                bulletCounts[gunindex] = 10;
+                BulletUI.Instance.BulletCount = bulletCounts[gunindex];
             }
         }
     }
 
     void FixedUpdate()
     {
-        // Directly set velocity (DNF-style immediate response)
-        rb.velocity = moveInput * moveSpeed;
+        // Combine movement input with knockback velocity
+        Vector2 targetVelocity = moveInput * moveSpeed + knockbackVelocity;
+        rb.velocity = targetVelocity;
+
+        // Decay knockback over time
+        knockbackVelocity = Vector2.Lerp(knockbackVelocity, Vector2.zero, knockbackDecay * Time.fixedDeltaTime);
 
         // Clamp position within boundaries
         if (useBoundaries)
