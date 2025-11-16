@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     public float speed = 20f;
     public float lifeTime = 2f;
     public float oppositeForceStrength = 5f;
+    public float enemyForceStrength = 2f;
+    public int damage = 10;
     Rigidbody2D rb;
     
     // Start is called before the first frame update
