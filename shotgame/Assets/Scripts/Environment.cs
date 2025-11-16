@@ -61,7 +61,8 @@ public class Environment : MonoBehaviour
                 a.transform.position = new Vector3(j * sc.x, i * sc.y, - 0.7071f * transform.localScale.z * (numLanes - i)) + transform.position;
                 a.transform.localScale = new Vector3(1,1,1);
                 //a.transform.localScale = new Vector3(a.transform.localScale.x, a.transform.localScale.y, 0);
-                a.transform.SetParent(transform);
+                a.transform.SetParent(transform, false);
+                
 
             }
             mapData[i] = new LinkedList<float>(b);
