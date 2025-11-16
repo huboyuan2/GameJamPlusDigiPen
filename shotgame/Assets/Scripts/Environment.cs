@@ -6,6 +6,7 @@ public class Environment : MonoBehaviour
 {
     public int numLanes = 3;
     public int mapLength = 10;
+    public int maxPitfallDistance = 1;
     public float scrollPosition = 0;
     public float lagBackDestroy = -10f;
     public float leadSpawnDistance = 45f;
@@ -14,9 +15,11 @@ public class Environment : MonoBehaviour
     public GameObject pitfallPrefab;
     public GameObject obstaclePrefab;
     public LinkedList<float>[] mapData;
+    public int[] lanePitfallDistances;
     // Start is called before the first frame update
     void Start()
     {
+        lanePitfallDistances = new int[numLanes];
         mapData = new LinkedList<float>[numLanes];
         for (int i = 0; i < numLanes; i++)
         {
@@ -26,13 +29,23 @@ public class Environment : MonoBehaviour
             {
                 b[j] = (Random.Range(0, 10));
                 GameObject a;//= Instantiate(roadPrefab);
-                if (b[j] < 1.5)
+                if (b[j] < 1.45)
                 {
-                    a = Instantiate(pitfallPrefab);
+                    if (lanePitfallDistances[i] >= maxPitfallDistance)
+                    {
+                        a = Instantiate(roadPrefab);
+                        lanePitfallDistances[i] = 0;
+                    }
+                    else
+                    {
+                        a = Instantiate(pitfallPrefab);
+                        lanePitfallDistances[i]++;
+                    }
                 }
-                else if (b[j] < 2.5)
+                else if (b[j] < 2.0)
                 {
                     a = Instantiate(obstaclePrefab);
+                    lanePitfallDistances[i]++;
                 }
                 else
                 {

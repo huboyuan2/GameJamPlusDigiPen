@@ -870,6 +870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numLanes: 3
   mapLength: 1000
+  maxPitfallDistance: 3
   scrollPosition: 0
   lagBackDestroy: -10
   leadSpawnDistance: 45
@@ -877,6 +878,7 @@ MonoBehaviour:
   roadPrefab: {fileID: 8600858544319004459, guid: 05c0379378bc69f4b8e15f40553cf586, type: 3}
   pitfallPrefab: {fileID: 215821583256047414, guid: 54c33f00100236746adada0754bf0201, type: 3}
   obstaclePrefab: {fileID: 8716367297084761792, guid: 6198ad4534461f94ea0de6ada6bef7b5, type: 3}
+  lanePitfallDistances: 
 --- !u!1 &1997202284
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,7 +895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1997202285
 SpriteRenderer:
   m_ObjectHideFlags: 0
