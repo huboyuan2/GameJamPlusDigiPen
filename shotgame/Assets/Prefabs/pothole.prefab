@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2704354542714543455}
   - component: {fileID: 2399003706445403145}
   m_Layer: 0
-  m_Name: rdBlock
+  m_Name: pothole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 90547a7ee3ced8b42ba2dbf67569e182, type: 2}
+  - {fileID: 2100000, guid: 24d55327fa89b934f8bd91ac5e52e338, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
