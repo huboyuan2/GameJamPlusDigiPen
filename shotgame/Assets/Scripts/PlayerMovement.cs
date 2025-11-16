@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     public float bulletSpeed = 10f;
     public int gunindex = 0;
     public bool isDebugging = true;
-
+    public GameObject Arm;
     [Header("Knockback Settings")]
     public float knockbackDecay = 5f; // How fast knockback decays
 
@@ -94,6 +94,8 @@ public class PlayerMovement : MonoBehaviour
         {
             PerformJump();
         }
+
+        // Weapon switching
         float scrollInput = Input.GetAxis("Mouse ScrollWheel");
         if (scrollInput != 0f && bulletPrefabs.Count > 0 && bulletCounts.Count > 0)
         {
@@ -122,13 +124,26 @@ public class PlayerMovement : MonoBehaviour
             BulletUI.Instance.BulletCount = bulletCounts[gunindex];
             Debug.Log($"Switched to weapon {gunindex}");
         }
-        /*shootPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        shootPoint.z = 0f; // important for 2D*/
-        
+
+        // Calculate shoot point and direction every frame
         Vector3 mouseScreenPos = Input.mousePosition;
         mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z; // Keep original depth
         shootPoint = Camera.main.ScreenToWorldPoint(mouseScreenPos);
+
+        // Get shoot position
+        Vector3 shootPos = visualTransform != null ? visualTransform.position : transform.position;
         
+        // Calculate shoot direction
+        Vector2 shootDirection = (shootPoint - shootPos).normalized;
+
+        // Rotate Arm to face mouse direction every frame
+        if (Arm != null)
+        {
+            float angle = Mathf.Atan2(shootDirection.y, shootDirection.x) * Mathf.Rad2Deg;
+            Arm.transform.rotation = Quaternion.Euler(0, 0, angle);
+        }
+
+        // Handle shooting
         if (Input.GetMouseButtonDown(0))
         {
             if (gunindex > bulletCounts.Count || gunindex > bulletPrefabs.Count)
@@ -144,14 +159,7 @@ public class PlayerMovement : MonoBehaviour
                 GameObject bulletPrefab = bulletPrefabs[gunindex];
                 if (bulletPrefab != null)
                 {
-                    Vector3 shootpos;
-                    if (visualTransform != null)
-                        shootpos = visualTransform.position;
-                    else
-                        shootpos = transform.position;
-
-                    GameObject bullet = Instantiate(bulletPrefab, shootpos, Quaternion.identity);
-                    Vector2 shootDirection = (shootPoint - shootpos).normalized;
+                    GameObject bullet = Instantiate(bulletPrefab, shootPos, Quaternion.identity);
                     Bullet bulletScript = bullet.GetComponent<Bullet>();
                     if (bulletScript != null)
                     {
@@ -169,6 +177,8 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
+
+        // Debug reload
         if (isDebugging)
         {
             if (Input.GetKeyDown(KeyCode.R))
