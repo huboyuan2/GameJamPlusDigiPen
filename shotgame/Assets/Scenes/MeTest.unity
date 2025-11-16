@@ -206,6 +206,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1581245528175925779, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2096834279610507899, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -265,6 +269,10 @@ PrefabInstance:
     - target: {fileID: 4891542291998214698, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5169103363898029705, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5251382054286268290, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1063,6 +1071,7 @@ MonoBehaviour:
   pitfall2Prefab: {fileID: 0}
   pitfall3Prefab: {fileID: 0}
   obstaclePrefab: {fileID: 8716367297084761792, guid: 6198ad4534461f94ea0de6ada6bef7b5, type: 3}
+  roadTex: {fileID: 0}
   lanePitfallDistances: 
 --- !u!1 &1419352801
 GameObject:
@@ -1241,6 +1250,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 455293396845881320, guid: 0c57cec0736de784e91dca5ffff89bd4, type: 3}
+      propertyPath: isMoving
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043342279029635592, guid: 0c57cec0736de784e91dca5ffff89bd4, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1043342279029635592, guid: 0c57cec0736de784e91dca5ffff89bd4, type: 3}
       propertyPath: isMoving
       value: 0
       objectReference: {fileID: 0}
