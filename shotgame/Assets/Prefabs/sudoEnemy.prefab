@@ -165,7 +165,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0de9c0194dc98d4c974b18139809b5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
+  maxHealth: 1
+  damage: 10
+  speedratio: 1
+  yPositionSpeedFactor: 0.1
+  referenceY: 0
 --- !u!1 &5952074352762542073
 GameObject:
   m_ObjectHideFlags: 0
