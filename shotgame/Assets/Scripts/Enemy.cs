@@ -26,6 +26,8 @@ public class Enemy : MonoBehaviour
     public float bulletSpeed = 10f;                  // Enemy bullet speed
     public float predictionMultiplier = 0.5f;        // How much to lead the target
     
+
+    
     private Transform player;
     private float fireTimer = 0f;
     private EnemySpawner spawner;
@@ -250,7 +252,7 @@ public class Enemy : MonoBehaviour
     {
         health -= damage;
         Debug.Log($"Enemy took {damage} damage. Health: {health}/{maxHealth}");
-
+      
         if (health <= 0)
         {
             Die();
@@ -266,7 +268,7 @@ public class Enemy : MonoBehaviour
         {
             EnemySpawner.Instance.activeEnemies.Remove(this.gameObject);
         }
-
+      
         // Handle death animation/destruction
         if (dummyEnemy != null)
         {

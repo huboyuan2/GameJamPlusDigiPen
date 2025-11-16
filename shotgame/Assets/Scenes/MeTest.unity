@@ -166,6 +166,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHp: 100
   healthBar: {fileID: 0}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  damageEffectDuration: 0.5
 --- !u!114 &187847080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +185,7 @@ MonoBehaviour:
   useScreenBounds: 1
   minBounds: {x: -4.44, y: -10}
   maxBounds: {x: 10, y: 10}
+  screenRatio: 0.333
   visualTransform: {fileID: 2066026390}
   jumpHeight: 1.5
   jumpDuration: 0.5

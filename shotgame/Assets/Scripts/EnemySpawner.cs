@@ -6,6 +6,8 @@ public class EnemySpawner : MonoBehaviour
 {
     private static EnemySpawner _instance;
 
+
+
     public static EnemySpawner Instance
     {
         get
@@ -44,16 +46,14 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (activeEnemies.Count < 5)
-        {
-            SpawnEnemy();
-        }
+     SpawnEnemy();
     }
 
     void SpawnEnemy()
     {
         // Choose a random enemy template and spawn point
         GameObject enemyPrefab = enemyTemplates[Random.Range(0, enemyTemplates.Count)];
+
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Count)];
 
         // Instantiate the enemy and add it to the active list
@@ -61,6 +61,8 @@ public class EnemySpawner : MonoBehaviour
         activeEnemies.Add(enemy);
     }
 
+   
+    
     public void TelePortEnemy(Enemy enemy)
     {
         if (activeEnemies.Contains(enemy.gameObject))
