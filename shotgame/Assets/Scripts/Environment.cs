@@ -6,27 +6,31 @@ public class Environment : MonoBehaviour
 {
     public int numLanes = 3;
     public int mapLength = 10;
+    public float scrollPosition = 0;
+    public float lagBackDestroy = -10f;
+    public float leadSpawnDistance = 45f;
     public float scrollSpeed = 100f;
     public GameObject roadPrefab;
     public GameObject pitfallPrefab;
     public GameObject obstaclePrefab;
-    public float[][] mapData;
+    public LinkedList<float>[] mapData;
     // Start is called before the first frame update
     void Start()
     {
-        mapData = new float[numLanes][];
+        mapData = new LinkedList<float>[numLanes];
         for (int i = 0; i < numLanes; i++)
         {
-            mapData[i] = new float[mapLength];
+            float[] b = new float[mapLength];
+            
             for (int j = 0; j < mapLength; j++)
             {
-                mapData[i][j] = Random.Range(0, 10);
+                b[j] = (Random.Range(0, 10));
                 GameObject a;//= Instantiate(roadPrefab);
-                if (mapData[i][j] < 1.5)
+                if (b[j] < 1.5)
                 {
                     a = Instantiate(pitfallPrefab);
                 }
-                else if (mapData[i][j] < 2.5)
+                else if (b[j] < 2.5)
                 {
                     a = Instantiate(obstaclePrefab);
                 }
@@ -37,8 +41,10 @@ public class Environment : MonoBehaviour
                 Vector3 sc = transform.localScale;
                 a.transform.position = new Vector3(j * sc.x, i * sc.y, 0 * sc.z) + transform.position;
                 a.transform.localScale = transform.localScale;
+                a.transform.SetParent(transform, true);
 
             }
+            mapData[i] = new LinkedList<float>(b);
         }
         
     }
@@ -46,6 +52,6 @@ public class Environment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = new Vector3(transform.position.x - scrollSpeed * Time.deltaTime, transform.position.y, transform.position.z);// = scrollSpeed * Time.deltaTime;
     }
 }
