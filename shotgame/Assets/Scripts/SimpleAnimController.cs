@@ -12,11 +12,27 @@ public class SimpleAnimController : MonoBehaviour
     public float frameRate = 10f; // Frames per second
     public bool playOnStart = true;
     public bool loop = true;
+    
+    [Header("State")]
+    private bool isGameStarted = false;
+    
     private SpriteRenderer spriteRenderer;
     private float frameInterval;
     private float timer;
     private int currentFrame = 0;
     private bool isPlaying = false;
+
+    void OnEnable()
+    {
+        // Subscribe to game start event
+        UIManager.GameStart += OnGameStart;
+    }
+
+    void OnDisable()
+    {
+        // Unsubscribe from game start event
+        UIManager.GameStart -= OnGameStart;
+    }
 
     void Start()
     {
@@ -37,14 +53,21 @@ public class SimpleAnimController : MonoBehaviour
         // Calculate interval between frames
         frameInterval = 1f / frameRate;
 
+        // Note: Don't play on start anymore - wait for game start event
+        // Animation will start when OnGameStart() is called
         if (playOnStart)
         {
-            Play();
+            // Set to first frame but don't start playing yet
+            currentFrame = 0;
+            UpdateSprite();
         }
     }
 
     void Update()
     {
+        // Don't play animation if game hasn't started yet
+        if (!isGameStarted) return;
+        
         if (!isPlaying) return;
 
         timer += Time.deltaTime;
@@ -92,11 +115,32 @@ public class SimpleAnimController : MonoBehaviour
         }
     }
 
+    void OnGameStart()
+    {
+        if (isGameStarted) return; // Prevent multiple calls
+        isGameStarted = true;
+
+        Debug.Log("[SimpleAnimController] Game started! Beginning animation playback.");
+
+        // Start playing animation if playOnStart is enabled
+        if (playOnStart)
+        {
+            Play();
+        }
+    }
+
     #region Public Methods
 
     // Start playing animation
     public void Play()
     {
+        // Only allow playing if game has started
+        if (!isGameStarted)
+        {
+            Debug.LogWarning("[SimpleAnimController] Cannot play animation - game hasn't started yet!");
+            return;
+        }
+
         isPlaying = true;
         currentFrame = 0;
         timer = 0f;
@@ -118,6 +162,13 @@ public class SimpleAnimController : MonoBehaviour
     // Resume animation
     public void Resume()
     {
+        // Only allow resuming if game has started
+        if (!isGameStarted)
+        {
+            Debug.LogWarning("[SimpleAnimController] Cannot resume animation - game hasn't started yet!");
+            return;
+        }
+
         isPlaying = true;
     }
 

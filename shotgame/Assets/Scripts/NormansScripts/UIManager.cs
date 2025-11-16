@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class UIManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject highScore;
     [SerializeField] private GameObject ScoreBoard;
 
+
+    public static Action GameStart;
     void OnEnable()
     {
         // Subscribe to player death event
@@ -52,6 +55,7 @@ public class UIManager : MonoBehaviour
         playButton.SetActive(false);
         highScore.SetActive(true);
         ScoreBoard.SetActive(false);
+        GameStart?.Invoke();
     }
     
     public void GameMenuPhase()
