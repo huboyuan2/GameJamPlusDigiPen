@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
+    private Health health;
     private Vector2 moveInput;
     private Vector2 knockbackVelocity; // Store knockback velocity
 
@@ -45,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         BulletUI.Instance.BulletCount = bulletCounts[gunindex];
+        health = GetComponent<Health>();
         rb = GetComponent<Rigidbody2D>();
         // Key settings: disable gravity, freeze Z rotation
         rb.gravityScale = 0f;
@@ -260,10 +262,32 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        // Get screen corners in world space
-        Vector3 bottomLeft = cam.ViewportToWorldPoint(new Vector3(0, 0, cam.nearClipPlane));
-        Vector3 bottomRight = cam.ViewportToWorldPoint(new Vector3(1, 0, cam.nearClipPlane));
-        Vector3 screenCenter = cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, cam.nearClipPlane));
+        // Determine the Z plane distance for boundary calculation
+        float zDistance;
+
+        if (cam.orthographic)
+        {
+            // Orthographic camera: use near clip plane
+            zDistance = cam.nearClipPlane;
+        }
+        else
+        {
+            // Perspective camera: calculate Z distance from camera to player
+            // Use player's current Z position, or a fixed gameplay plane Z
+            zDistance = Mathf.Abs(cam.transform.position.z - transform.position.z);
+
+            // Fallback: if player is too close to camera, use a reasonable default
+            if (zDistance < 0.1f)
+            {
+                zDistance = 10f; // Default gameplay plane distance
+                Debug.LogWarning($"Player too close to camera. Using default Z distance: {zDistance}");
+            }
+        }
+
+        // Get screen corners in world space at the specified Z distance
+        Vector3 bottomLeft = cam.ViewportToWorldPoint(new Vector3(0, 0, zDistance));
+        Vector3 bottomRight = cam.ViewportToWorldPoint(new Vector3(1, 0, zDistance));
+        Vector3 screenCenter = cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, zDistance));
 
         // Set boundaries to lower half of screen
         minBounds.x = -4f;//bottomLeft.x;
@@ -271,6 +295,6 @@ public class PlayerMovement : MonoBehaviour
         minBounds.y = -2.2f;// bottomLeft.y;
         maxBounds.y = 0.25f;// screenCenter.y; // Use screen center as top boundary (lower half)
 
-        Debug.Log($"Screen bounds calculated: Min({minBounds.x}, {minBounds.y}), Max({maxBounds.x}, {maxBounds.y})");
+        Debug.Log($"Screen bounds calculated (Camera: {(cam.orthographic ? "Orthographic" : "Perspective")}, Z Distance: {zDistance:F2}): Min({minBounds.x:F2}, {minBounds.y:F2}), Max({maxBounds.x:F2}, {maxBounds.y:F2})");
     }
 }
