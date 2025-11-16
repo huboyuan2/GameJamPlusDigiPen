@@ -9,7 +9,7 @@ public class CamController : MonoBehaviour
     public Transform player;
     public float followSmoothTime = 0.3f;
     public Vector3 followOffset = new Vector3(0, 0, -10f);
-
+    public Transform background;
     [Header("Default Position")]
     public Vector3 defaultPosition = new Vector3(0, 0, -10f);
     public float switchDuration = 0.5f;

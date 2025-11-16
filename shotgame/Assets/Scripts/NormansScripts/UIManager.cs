@@ -2,13 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
+using TMPro;
+using UnityEditor.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameObject playButton;
     [SerializeField] private GameObject highScore;
     [SerializeField] private GameObject ScoreBoard;
+    [SerializeField] private TextMeshProUGUI scoreText;
 
+    private float scores = 0;
+
+    public static Action GameStart;
     void OnEnable()
     {
         // Subscribe to player death event
@@ -45,6 +52,7 @@ public class UIManager : MonoBehaviour
         playButton.SetActive(false);
         highScore.SetActive(false);
         ScoreBoard.SetActive(true);
+        scoreText.text = HighScore.instance.GetScore().ToString();
     }
     
     public void GameStartPhase()
@@ -52,6 +60,7 @@ public class UIManager : MonoBehaviour
         playButton.SetActive(false);
         highScore.SetActive(true);
         ScoreBoard.SetActive(false);
+        GameStart?.Invoke();
     }
     
     public void GameMenuPhase()

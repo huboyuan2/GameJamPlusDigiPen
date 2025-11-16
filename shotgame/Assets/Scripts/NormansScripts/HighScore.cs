@@ -6,9 +6,15 @@ using UnityEngine;
 
 public class HighScore : MonoBehaviour
 {
+    public static HighScore instance;
     private int killScore = 0;
     [SerializeField] string textBeforeScore;
     private TextMeshProUGUI tmp;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -23,5 +29,10 @@ public class HighScore : MonoBehaviour
     public void AddScore()
     {
         killScore++;
+    }
+
+    public int GetScore()
+    {
+        return killScore;
     }
 }

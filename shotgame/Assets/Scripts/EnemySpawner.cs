@@ -28,6 +28,7 @@ public class EnemySpawner : MonoBehaviour
     public List<GameObject> activeEnemies;
 
     [Header("State")]
+    private bool isGameStarted = false;
     private bool isPlayerDead = false;
 
     void Awake()
@@ -46,12 +47,18 @@ public class EnemySpawner : MonoBehaviour
 
     void OnEnable()
     {
+        // Subscribe to game start event
+        UIManager.GameStart += OnGameStart;
+        
         // Subscribe to player death event
         Health.PlayerDead += OnPlayerDead;
     }
 
     void OnDisable()
     {
+        // Unsubscribe from game start event
+        UIManager.GameStart -= OnGameStart;
+        
         // Unsubscribe from player death event
         Health.PlayerDead -= OnPlayerDead;
     }
@@ -59,6 +66,9 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Don't spawn if game hasn't started yet
+        if (!isGameStarted) return;
+        
         if (isPlayerDead) return; // Stop spawning if player is dead
 
         if (activeEnemies.Count < 5)
@@ -69,6 +79,9 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
+        // Don't spawn if game hasn't started yet
+        if (!isGameStarted) return;
+        
         if (isPlayerDead) return; // Safety check
 
         if (enemyTemplates.Count == 0 || spawnPoints.Count == 0)
@@ -94,6 +107,14 @@ public class EnemySpawner : MonoBehaviour
         {
             enemy.transform.position = spawnPoints[Random.Range(0, spawnPoints.Count)].position;
         }
+    }
+
+    void OnGameStart()
+    {
+        if (isGameStarted) return; // Prevent multiple calls
+        isGameStarted = true;
+        
+        Debug.Log("[EnemySpawner] Game started! Beginning enemy spawning.");
     }
 
     void OnPlayerDead()

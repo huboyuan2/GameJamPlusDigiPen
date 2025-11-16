@@ -188,7 +188,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.57254905}
   m_FlipX: 0
@@ -453,6 +453,7 @@ MonoBehaviour:
   useScreenBounds: 1
   minBounds: {x: -10, y: -10}
   maxBounds: {x: 10, y: 10}
+  screenRatio: 0.333
   visualTransform: {fileID: 6433200851207698663}
   jumpHeight: 1.5
   jumpDuration: 0.5
@@ -468,6 +469,7 @@ MonoBehaviour:
   isDebugging: 1
   Arm: {fileID: 2183496169961613850}
   knockbackDecay: 5
+  deathScrollSpeedMultiplier: 1
 --- !u!114 &6158443249020387245
 MonoBehaviour:
   m_ObjectHideFlags: 0
