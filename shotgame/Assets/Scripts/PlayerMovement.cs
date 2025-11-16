@@ -120,13 +120,12 @@ public class PlayerMovement : MonoBehaviour
             BulletUI.Instance.BulletCount = bulletCounts[gunindex];
             Debug.Log($"Switched to weapon {gunindex}");
         }
-        shootPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        shootPoint.z = 0f; // important for 2D
-
-        if (Input.GetMouseButtonDown(0) && isJumping)
-        {
-            PerformJump();
-        }
+        /*shootPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        shootPoint.z = 0f; // important for 2D*/
+        
+        Vector3 mouseScreenPos = Input.mousePosition;
+        mouseScreenPos.z = Camera.main.WorldToScreenPoint(transform.position).z; // Keep original depth
+        shootPoint = Camera.main.ScreenToWorldPoint(mouseScreenPos);
         
         if (Input.GetMouseButtonDown(0))
         {
@@ -134,6 +133,10 @@ public class PlayerMovement : MonoBehaviour
                 return;
             if (bulletCounts[gunindex] > 0)
             {
+                if (isJumping)
+                {
+                    PerformJump();
+                }
                 bulletCounts[gunindex]--;
                 BulletUI.Instance.BulletCount = bulletCounts[gunindex];
                 GameObject bulletPrefab = bulletPrefabs[gunindex];
