@@ -998,6 +998,7 @@ MonoBehaviour:
   pitfall2Prefab: {fileID: 8600858544319004459, guid: 8a6bdf3c081270e4589fe09e22ea206c, type: 3}
   pitfall3Prefab: {fileID: 8600858544319004459, guid: 55f781b03b37ec04f842b25eea73c61d, type: 3}
   obstaclePrefab: {fileID: 8716367297084761792, guid: 6198ad4534461f94ea0de6ada6bef7b5, type: 3}
+  roadTex: {fileID: 2800000, guid: 164b53745f063bf429b996e9875eee24, type: 3}
   lanePitfallDistances: 
 --- !u!1 &1997202284
 GameObject:

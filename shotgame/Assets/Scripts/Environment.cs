@@ -17,6 +17,7 @@ public class Environment : MonoBehaviour
     public GameObject pitfall3Prefab;
     public GameObject obstaclePrefab;
     public LinkedList<float>[] mapData;
+    public Texture roadTex;
     public int[] lanePitfallDistances;
     // Start is called before the first frame update
     void Start()
@@ -56,6 +57,9 @@ public class Environment : MonoBehaviour
                 else // regular road tile
                 {
                     a = Instantiate(roadPrefab);
+                    //a.GetComponent<Renderer>().material.mainTexture = roadTex;// SetTexture()
+                    //a_Tex = roadTex;
+
                 }
                 Vector3 sc = transform.localScale;
                 a.transform.position = new Vector3(j * sc.x, i * sc.y, - 0.7071f * transform.localScale.z * (numLanes - i)) + transform.position;
