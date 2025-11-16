@@ -20,9 +20,12 @@ public class PlayerMovement : MonoBehaviour
     [Header("Fake Jump Settings")]
     public Transform visualTransform; // Assign sprite child object here
     public float jumpHeight = 1.5f;
+    
     public float jumpDuration = 0.5f;
+    public float fallDuration = 0.5f;
     public KeyCode jumpKey = KeyCode.Space;
     public bool isJumping = false;
+    private float originY;
 
     private Tween jumpTween;
     [Header("Shoot Settings")]
@@ -72,6 +75,7 @@ public class PlayerMovement : MonoBehaviour
                 Debug.LogWarning("No visual transform found! Please assign one or create a child object.");
             }
         }
+        originY = visualTransform.position.y;
     }
 
     void Update()
@@ -118,6 +122,12 @@ public class PlayerMovement : MonoBehaviour
         }
         shootPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         shootPoint.z = 0f; // important for 2D
+
+        if (Input.GetMouseButtonDown(0) && isJumping)
+        {
+            PerformJump();
+        }
+        
         if (Input.GetMouseButtonDown(0))
         {
             if (gunindex > bulletCounts.Count || gunindex > bulletPrefabs.Count)
@@ -167,6 +177,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Combine movement input with knockback velocity
+        Vector2 noYKnock = new Vector2(knockbackVelocity.x, 0);
         Vector2 targetVelocity = moveInput * moveSpeed + knockbackVelocity;
         rb.velocity = targetVelocity;
 
@@ -204,7 +215,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Create jump sequence
         Sequence jumpSequence = DOTween.Sequence();
-
+        
         // Jump up
         jumpSequence.Append(
             visualTransform.DOLocalMoveY(jumpHeight, jumpDuration * 0.5f)
@@ -213,7 +224,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Fall down
         jumpSequence.Append(
-            visualTransform.DOLocalMoveY(0, jumpDuration * 0.5f)
+            visualTransform.DOLocalMoveY(0, fallDuration * 0.5f)
                 .SetEase(Ease.InQuad)
         );
 
