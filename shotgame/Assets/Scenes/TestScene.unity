@@ -969,7 +969,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -8.31, y: -0.83, z: -4}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -993,11 +993,12 @@ MonoBehaviour:
   lagBackDestroy: -10
   leadSpawnDistance: 45
   scrollSpeed: 6.9
-  roadPrefab: {fileID: 8600858544319004459, guid: 05c0379378bc69f4b8e15f40553cf586, type: 3}
-  pitfallPrefab: {fileID: 8600858544319004459, guid: c7d1017133b15cd40a7b73fb4bdc9d85, type: 3}
-  pitfall2Prefab: {fileID: 8600858544319004459, guid: 8a6bdf3c081270e4589fe09e22ea206c, type: 3}
-  pitfall3Prefab: {fileID: 8600858544319004459, guid: 55f781b03b37ec04f842b25eea73c61d, type: 3}
+  roadPrefab: {fileID: 2597037568749435352, guid: bcc8960e2193b044584bf65591ad643c, type: 3}
+  pitfallPrefab: {fileID: 3031310934812625113, guid: d9bf9fdd7caea024290278366066fc03, type: 3}
+  pitfall2Prefab: {fileID: 2581765077161473082, guid: 9af4c87432c90c740bdba17171dedd10, type: 3}
+  pitfall3Prefab: {fileID: 4663051042858671700, guid: ffab42bdf8f6a6242b8c38b84d3834f1, type: 3}
   obstaclePrefab: {fileID: 8716367297084761792, guid: 6198ad4534461f94ea0de6ada6bef7b5, type: 3}
+  emptyPrefab: {fileID: 215821583256047414, guid: 54c33f00100236746adada0754bf0201, type: 3}
   roadTex: {fileID: 2800000, guid: 164b53745f063bf429b996e9875eee24, type: 3}
   lanePitfallDistances: 
 --- !u!1 &1997202284

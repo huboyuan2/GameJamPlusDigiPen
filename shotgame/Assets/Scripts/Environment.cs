@@ -16,6 +16,7 @@ public class Environment : MonoBehaviour
     public GameObject pitfall2Prefab;
     public GameObject pitfall3Prefab;
     public GameObject obstaclePrefab;
+    public GameObject emptyPrefab;
     public LinkedList<float>[] mapData;
     public Texture roadTex;
     public int[] lanePitfallDistances;
@@ -34,13 +35,21 @@ public class Environment : MonoBehaviour
             
             for (int j = 0; j < mapLength; j++)
             {
+                if (j % 8 == 0 && i == 1)
+                {
+                    GameObject roadSpan = Instantiate(roadPrefab);
+                    roadSpan.transform.position = new Vector3(j + transform.position.x , i + transform.position.y, transform.position.z + 0.1f);
+                    // keep the scaling and slice date //roadSpan.transform.localScale = new Vector3(1, 1, 1);
+                    //a.transform.localScale = new Vector3(a.transform.localScale.x, a.transform.localScale.y, 0);
+                    roadSpan.transform.SetParent(transform, false);
+                }
                 b[j] = (Random.Range(0, 10));
                 GameObject a;//= Instantiate(roadPrefab);
                 if (b[j] < 1.45) // pitfall
                 {
                     if (lanePitfallDistances[i] >= maxPitfallDistance)
                     {
-                        a = Instantiate(roadPrefab);
+                        a = Instantiate(emptyPrefab);
                         lanePitfallDistances[i] = 0;
                     }
                     else
@@ -56,13 +65,13 @@ public class Environment : MonoBehaviour
                 }
                 else // regular road tile
                 {
-                    a = Instantiate(roadPrefab);
+                    a = Instantiate(emptyPrefab);
                     //a.GetComponent<Renderer>().material.mainTexture = roadTex;// SetTexture()
                     //a_Tex = roadTex;
 
                 }
                 Vector3 sc = transform.localScale;
-                a.transform.position = new Vector3(j * sc.x, i * sc.y, - 0.7071f * transform.localScale.z * (numLanes - i)) + transform.position;
+                a.transform.position = new Vector3(j * sc.x, i * sc.y, 1 - i) + transform.position;
                 a.transform.localScale = new Vector3(1,1,1);
                 //a.transform.localScale = new Vector3(a.transform.localScale.x, a.transform.localScale.y, 0);
                 a.transform.SetParent(transform, false);
