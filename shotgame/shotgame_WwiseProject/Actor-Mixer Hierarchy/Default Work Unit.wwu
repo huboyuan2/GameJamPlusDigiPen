@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{02F31F87-EAFC-498E-9484-E146F06D124D}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{02F31F87-EAFC-498E-9484-E146F06D124D}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Gameplay" ID="{6519BEA4-F3C4-49C9-A554-A5972A37B007}" ShortID="495219027">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{C13D7327-BA11-4DF3-B527-B897C2D9FF85}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="PlayerDied" ID="{6B91FCB1-09FB-4DC6-A0BD-240FF444EDF2}" ShortID="636110817">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Bells, Gong, Kung Fu, Hit, Short SND44409" ID="{DC366148-8247-48CF-B634-517C47AEC7BA}" ShortID="9375171">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>48</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-350</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{94274221-AFF5-409A-B307-C8548B97965A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Bells, Gong, Kung Fu, Hit, Short SND44409" ID="{66DD38F1-A5D0-48BD-886D-A463EFDDAD10}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.5404070100119"/>
+												<Property Name="FadeOutShape" Type="int16" Value="7"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0242711173525913"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.83327849273316"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Bells, Gong, Kung Fu, Hit, Short SND44409.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1029988049"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Bells, Gong, Kung Fu, Hit, Short SND44409" ID="{66DD38F1-A5D0-48BD-886D-A463EFDDAD10}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="PlayerHurt" ID="{63311497-C573-4652-AD44-0E0EF2BAE9ED}" ShortID="344048797">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>18</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>22</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-400</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{0D338CF9-2593-43F2-A2EB-83871B94DB2C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Min" Type="Real64" Value="-300"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Voices, Efforts, Grunts, Male, Comical SND54339" ID="{929D55B0-26C4-40E7-A94A-EE0B15635D52}" ShortID="552560964">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Voices, Efforts, Grunts, Male, Comical SND54339" ID="{77ACE1E9-DDA2-451D-BFE6-FE45F02DAD65}">
+											<Language>SFX</Language>
+											<AudioFile>Voices, Efforts, Grunts, Male, Comical SND54339.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="711255537"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Voices, Efforts, Grunts, Male, Comical SND54339" ID="{77ACE1E9-DDA2-451D-BFE6-FE45F02DAD65}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<ActorMixer Name="Shotgun" ID="{7FF45DD5-9B59-4934-8C14-94F8679215A7}" ShortID="919823107">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="shotgun_fire" ID="{4C4B7537-03CD-4C99-A26A-D408EACB9F32}" ShortID="1008972527">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{24E70BA4-F0AF-48A5-849E-1B9F23CCE781}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="7"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F999DABE-E08A-401F-9EA3-9028D2212760}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B0D117CF-AA06-44CC-A832-FB503E658280}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Open Tube by Mrthenoronha Id-369776" ID="{D737F4D4-25A6-41A8-BC8E-73449027438D}" ShortID="588346821">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>36</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-390</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Open Tube by Mrthenoronha Id-369776" ID="{26B3FF50-4E03-4D9D-904C-EC89F329E627}">
+													<Language>SFX</Language>
+													<AudioFile>Open Tube by Mrthenoronha Id-369776.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1011694801"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Open Tube by Mrthenoronha Id-369776" ID="{26B3FF50-4E03-4D9D-904C-EC89F329E627}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Explosions, Real, Heavy Explosion, Crunchy Blasts, Echo SND122487" ID="{AD7A7757-25FC-4BAE-A6E3-3C64FB216059}" ShortID="442619327">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>19</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>11</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{976E6529-F6FB-4755-9022-6F941101BAF9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Explosions, Real, Heavy Explosion, Crunchy Blasts, Echo SND122487" ID="{9A985AE4-34E3-45BD-8283-579B0B5FE285}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0157308620075847"/>
+														<Property Name="FadeInShape" Type="int16" Value="7"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.492283446355003"/>
+														<Property Name="FadeOutShape" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Explosions, Real, Heavy Explosion, Crunchy Blasts, Echo SND122487.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="346378259"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Explosions, Real, Heavy Explosion, Crunchy Blasts, Echo SND122487" ID="{9A985AE4-34E3-45BD-8283-579B0B5FE285}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Explosions, Real, Boom, Distant Explosion 02 SND46328" ID="{88B9204F-234A-4F27-B99A-1577D962D42F}" ShortID="174818967">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>8</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MakeUpGain" Type="Real64">
+													<ValueList>
+														<Value>-11</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>580</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Explosions, Real, Boom, Distant Explosion 02 SND46328" ID="{7C6CB803-9C8C-428D-A604-D525E9C18BC5}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0864460735738522"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.814688653530186"/>
+														<Property Name="FadeOutShape" Type="int16" Value="2"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.542252643326891"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.55340964588856"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Explosions, Real, Boom, Distant Explosion 02 SND46328.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="588175878"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Explosions, Real, Boom, Distant Explosion 02 SND46328" ID="{7C6CB803-9C8C-428D-A604-D525E9C18BC5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="shotgun_jump" ID="{0F83AA93-C10A-42EA-9DAA-F5A70DD0DDE2}" ShortID="340046144">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>37</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>250</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BD388605-24BF-42E7-BC75-E709E16FF1D2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Cartoon, Boing, Jump, Spring SND5944" ID="{4F1B6753-FD93-4CFB-8A08-9582F6AA44C1}" ShortID="1043505796">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Cartoon, Boing, Jump, Spring SND5944" ID="{42E4769F-6B6F-4F9D-8231-226190A287E7}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0356918601102607"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0125971270977391"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Cartoon, Boing, Jump, Spring SND5944.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="761037407"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Cartoon, Boing, Jump, Spring SND5944" ID="{42E4769F-6B6F-4F9D-8231-226190A287E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

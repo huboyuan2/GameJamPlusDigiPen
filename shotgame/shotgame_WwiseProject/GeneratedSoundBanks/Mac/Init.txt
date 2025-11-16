@@ -1,0 +1,25 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	766723505	GAME_STATE			\Default Work Unit\GAME_STATE	
+	3589896044	GAME_FSM			\Default Work Unit\GAME_FSM	
+
+State	ID	Name	State Group			Notes
+	748895195	None	GAME_STATE			
+	1160234136	Normal	GAME_STATE			
+	3064974266	Special	GAME_STATE			
+	702482391	Game	GAME_FSM			
+	748895195	None	GAME_FSM			
+	3705726509	Title	GAME_FSM			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3628477563	VOLUME_MUS			\Default Work Unit\VOLUME_MUS	
+	3673881719	VOLUME_SFX			\Default Work Unit\VOLUME_SFX	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	712897226	MUS			\Default Work Unit\Master Audio Bus\MUS	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

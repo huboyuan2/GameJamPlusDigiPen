@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DCA5132A-F604-431A-AE11-41426E17D555}" SchemaVersion="123">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{DCA5132A-F604-431A-AE11-41426E17D555}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{5507D480-B11C-4B0A-B9FF-63BE73887176}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Set_Player_Dead" ID="{E90E9E7F-F05C-4674-9C7D-D2A19CABD64A}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_Player_Not_Dead" ID="{424DB514-4639-4F86-98A7-0803110A8638}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Game" ID="{3E471E5F-C608-4ADA-BA65-7B3FEC53EA12}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Normal" ID="{8E5DCDEC-6E94-4854-86B8-D50CFA6E9DD0}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Special" ID="{EFADFDC6-B078-4258-B904-7E4CADEE95A6}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Title" ID="{1C4B7AA8-A865-4FC0-80FA-24EDDC638A86}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="GAME_BOOT" ID="{DF666D7A-60F5-4354-BABB-19DE16F1E2FE}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+							<Position X="6" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F9C44A80-8F08-4DED-966F-8F52639035E7}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{F9C44A80-8F08-4DED-966F-8F52639035E7}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="STATES" ID="{37D1B8D9-36AC-42A0-858B-F6A76974ECE0}" ShortID="658699797">
+					<ChildrenList>
+						<Event Name="Set_State_Title" ID="{1C4B7AA8-A865-4FC0-80FA-24EDDC638A86}">
+							<ChildrenList>
+								<Action Name="" ID="{C6CA1B59-DC86-40A1-BCA0-A788F34AFE2F}" ShortID="551721058">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Title" ID="{26DE0C7F-65D3-43A3-9DB7-3E1377158006}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_State_Game" ID="{3E471E5F-C608-4ADA-BA65-7B3FEC53EA12}">
+							<ChildrenList>
+								<Action Name="" ID="{2729D649-FB55-4C3D-AE3F-F6EEFBE0F6F0}" ShortID="928547793">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Game" ID="{9A0AC514-BB41-4503-9C60-CBCB8FFB3D4D}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_State_Normal" ID="{8E5DCDEC-6E94-4854-86B8-D50CFA6E9DD0}">
+							<ChildrenList>
+								<Action Name="" ID="{D176F5AA-FF9B-46CD-AAF2-B57288C48B9B}" ShortID="698325184">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Normal" ID="{E8B4C2F3-A44E-4E4D-B773-5D311ABA825D}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_State_Special" ID="{EFADFDC6-B078-4258-B904-7E4CADEE95A6}">
+							<ChildrenList>
+								<Action Name="" ID="{F680CBA7-DF1A-48EB-9986-2FFAB9097A42}" ShortID="915410924">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Special" ID="{78DFD81B-962F-46BB-98D2-80714E8CF36A}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Player_Dead" ID="{E90E9E7F-F05C-4674-9C7D-D2A19CABD64A}">
+							<ChildrenList>
+								<Action Name="" ID="{571D8D9C-7817-44BD-BDE5-EACA58C6367A}" ShortID="159971851">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeInCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_PlayRate" ID="{BE7712C7-6873-496D-9310-D3584FCB9007}" WorkUnitID="{8E662C40-AEDF-453A-8708-70027150F959}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Set_Player_Not_Dead" ID="{424DB514-4639-4F86-98A7-0803110A8638}">
+							<ChildrenList>
+								<Action Name="" ID="{3E5D886C-823C-4CD2-AEFD-5CA50E7207A6}" ShortID="32878320">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="FadeInCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_PlayRate" ID="{BE7712C7-6873-496D-9310-D3584FCB9007}" WorkUnitID="{8E662C40-AEDF-453A-8708-70027150F959}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="UTIL" ID="{2E1E5728-0C22-4586-8E4A-A2466233EEAF}" ShortID="116991212">
+					<ChildrenList>
+						<Event Name="GAME_BOOT" ID="{DF666D7A-60F5-4354-BABB-19DE16F1E2FE}">
+							<ChildrenList>
+								<Action Name="" ID="{E8D58311-5447-4942-BC80-ADF4F3A841D1}" ShortID="504212131">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Title" ID="{26DE0C7F-65D3-43A3-9DB7-3E1377158006}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8D51B9D7-4BE1-47B3-BC5E-A9E63151AFCF}" ShortID="53959065">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Normal" ID="{E8B4C2F3-A44E-4E4D-B773-5D311ABA825D}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{35B15477-EC8F-4966-AA76-95B0B5E52465}" ShortID="312532191">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ThrillOfTheGun" ID="{8560C4D9-16BF-463B-8A56-C337DEDD66A0}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4F230431-42D9-4A1A-8BE1-79AE75BEED19}" ShortID="469650901">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music_PlayRate" ID="{BE7712C7-6873-496D-9310-D3584FCB9007}" WorkUnitID="{8E662C40-AEDF-453A-8708-70027150F959}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TO_GAMEPLAY" ID="{C56D4143-EC4C-4B4E-B6EA-55CE34EF27AF}">
+							<ChildrenList>
+								<Action Name="" ID="{3DFC6A02-39C3-44C3-B84B-64B6CDDEF524}" ShortID="349900887">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_Player_Not_Dead" ID="{424DB514-4639-4F86-98A7-0803110A8638}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CB9DD930-C2DE-4A52-A7F0-15487E06F599}" ShortID="212816742">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Game" ID="{3E471E5F-C608-4ADA-BA65-7B3FEC53EA12}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9382C257-067C-4674-A4A5-ECF5CD076642}" ShortID="202446322">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Normal" ID="{8E5DCDEC-6E94-4854-86B8-D50CFA6E9DD0}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TO_TITLE" ID="{6AC6BEAE-92B3-40CD-996D-5A6A872AE950}">
+							<ChildrenList>
+								<Action Name="" ID="{A502708F-1F31-4D0B-B3E2-098944C57641}" ShortID="1012984860">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Title" ID="{1C4B7AA8-A865-4FC0-80FA-24EDDC638A86}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F1F744E2-A404-4810-BCE2-3116F49AA99C}" ShortID="31588587">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_State_Normal" ID="{8E5DCDEC-6E94-4854-86B8-D50CFA6E9DD0}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F614CD80-8120-4677-B17E-8AA37278691B}" ShortID="430508195">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_Player_Not_Dead" ID="{424DB514-4639-4F86-98A7-0803110A8638}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="GAMEPLAY" ID="{CA99CAD9-F515-4562-8A8A-83F13A6D72B4}" ShortID="980332618">
+					<ChildrenList>
+						<Event Name="PlayerDied" ID="{7C55955C-6AF2-457A-B774-6F0B3DB8F4D4}">
+							<ChildrenList>
+								<Action Name="" ID="{164CFC95-596B-4FB6-8B29-4424ADFE313B}" ShortID="79507658">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Set_Player_Dead" ID="{E90E9E7F-F05C-4674-9C7D-D2A19CABD64A}" WorkUnitID="{F9C44A80-8F08-4DED-966F-8F52639035E7}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5132803C-EF26-49D3-B1D0-0E1FF7900206}" ShortID="299685755">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerDied" ID="{6B91FCB1-09FB-4DC6-A0BD-240FF444EDF2}" WorkUnitID="{02F31F87-EAFC-498E-9484-E146F06D124D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayerHurt" ID="{5E4A79AD-DDC1-484F-AC50-2F9BD5C1D1AA}">
+							<ChildrenList>
+								<Action Name="" ID="{4D7DCD0B-E488-4017-AE4C-3FE5DF4C2CBB}" ShortID="91263138">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerHurt" ID="{63311497-C573-4652-AD44-0E0EF2BAE9ED}" WorkUnitID="{02F31F87-EAFC-498E-9484-E146F06D124D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_shotgun_jump" ID="{01E1D112-4FAA-4D91-9DA8-6BDB3DD05D4D}">
+							<ChildrenList>
+								<Action Name="" ID="{6626CB29-C47A-4671-A88D-BC8746570646}" ShortID="56369275">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="shotgun_jump" ID="{0F83AA93-C10A-42EA-9DAA-F5A70DD0DDE2}" WorkUnitID="{02F31F87-EAFC-498E-9484-E146F06D124D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_shotgun_fire" ID="{5979D449-535E-4A3B-A6AB-DDAD222987C3}">
+							<ChildrenList>
+								<Action Name="" ID="{2ED9A397-8533-4505-9F3D-3DE0CBA6B6DA}" ShortID="38637694">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="shotgun_fire" ID="{4C4B7537-03CD-4C99-A26A-D408EACB9F32}" WorkUnitID="{02F31F87-EAFC-498E-9484-E146F06D124D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

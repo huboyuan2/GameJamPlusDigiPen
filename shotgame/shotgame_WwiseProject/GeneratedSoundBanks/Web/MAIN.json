@@ -1,0 +1,724 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Web",
+  "BasePlatform": "Web",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{19A77BB2-7534-47DF-AC60-D683663D58CA}",
+    "Language": "SFX",
+    "Hash": "{1B02BD06-4A88-1F12-6B48-68A07626C000}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\MAIN",
+    "ShortName": "MAIN",
+    "Path": "MAIN.bnk",
+    "Media": [
+     {
+      "Id": "5811615",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "intro\\ThrillOfTheGun_intro_PERCUSSION_144bpm_4-4.wav",
+      "CachePath": "97/{976FF36C-9A95-BB75-AFD5-6A83B9986C2A}.wem"
+     },
+     {
+      "Id": "18536132",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chorus01\\ThrillOfTheGun_chorus01_SYNTHS_144bpm_4-4.wav",
+      "CachePath": "16/{16219D61-5491-1AEE-7B5A-86BACDA57FB4}.wem"
+     },
+     {
+      "Id": "95594223",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chorus01\\ThrillOfTheGun_chorus01_PERCUSSION_144bpm_4-4.wav",
+      "CachePath": "22/{22BDD2AE-2956-4BBD-710C-25D44681BFB0}.wem"
+     },
+     {
+      "Id": "105354765",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "prechorus\\ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4.wav",
+      "CachePath": "62/{6293A9D2-840A-AECA-86FB-668C4E74D243}.wem"
+     },
+     {
+      "Id": "114473070",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bridge\\ThrillOfTheGun_bridge_ORCHESTRA_144bpm_4-4.wav",
+      "CachePath": "35/{35599234-2345-73D5-7BD1-FCEE98152DB5}.wem"
+     },
+     {
+      "Id": "165152800",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chorus02\\ThrillOfTheGun_chorus02_S2_CrazyBass_144bpm_4-4.wav",
+      "CachePath": "FC/{FC310B6C-2C33-C3EE-8229-19FB357AF16F}.wem"
+     },
+     {
+      "Id": "241924347",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bridge\\ThrillOfTheGun_bridge_PERCUSSION_144bpm_4-4.wav",
+      "CachePath": "70/{702E7D6E-56B9-9ADE-C877-1FAA8380653A}.wem"
+     },
+     {
+      "Id": "306425354",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chorus01\\ThrillOfTheGun_chorus01_S2_Bass_144bpm_4-4.wav",
+      "CachePath": "FA/{FA7D4C7B-3F4D-1F42-DF9F-D2C44BA1572C}.wem"
+     },
+     {
+      "Id": "346378259",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Explosions, Real, Heavy Explosion, Crunchy Blasts, Echo SND122487.wav",
+      "CachePath": "0F/{0F10EE4A-8E5F-B32F-B6D4-D2902A80D865}.wem"
+     },
+     {
+      "Id": "370447945",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chorus01\\ThrillOfTheGun_chorus01_RISERIMPACTS_144bpm_4-4.wav",
+      "CachePath": "94/{94049699-1061-FE74-29CB-59650FE9DCA6}.wem"
+     },
+     {
+      "Id": "453798752",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chorus01\\ThrillOfTheGun_chorus01_ORCHESTRA_144bpm_4-4.wav",
+      "CachePath": "05/{05590356-BE58-4D24-BF6B-970870EEA8DD}.wem"
+     },
+     {
+      "Id": "552697585",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "prechorus\\ThrillOfTheGun_prechorus_ORCHESTRA_144bpm_4-4.wav",
+      "CachePath": "F3/{F3C89075-7456-52A4-C7F2-7AB98E3BD8EA}.wem"
+     },
+     {
+      "Id": "563331883",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bridge\\ThrillOfTheGun_bridge_S2_CrazyBass_144bpm_4-4.wav",
+      "CachePath": "88/{8812DB31-F8DD-5D42-C33C-3813CA24970E}.wem"
+     },
+     {
+      "Id": "579290775",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chorus02\\ThrillOfTheGun_chorus02_SYNTHS_144bpm_4-4.wav",
+      "CachePath": "7C/{7C92B1EF-989B-2084-5209-27BA8E5E0BF9}.wem"
+     },
+     {
+      "Id": "588175878",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Explosions, Real, Boom, Distant Explosion 02 SND46328.wav",
+      "CachePath": "04/{04AEB955-00EA-3C31-4BF7-AC13DFEA5592}.wem"
+     },
+     {
+      "Id": "589466004",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bridge\\ThrillOfTheGun_bridge_SYNTHS_144bpm_4-4.wav",
+      "CachePath": "A6/{A6962F4D-30C0-23D7-F0DE-1FB5495871B4}.wem"
+     },
+     {
+      "Id": "638703449",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chorus02\\ThrillOfTheGun_chorus02_PERCUSSION_144bpm_4-4.wav",
+      "CachePath": "32/{32E8A3E9-9250-6AC0-A488-3650EB7E5DC3}.wem"
+     },
+     {
+      "Id": "644145168",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "prechorus\\ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4.wav",
+      "CachePath": "CD/{CD27BBFB-196A-A987-B7F0-CC53CE47749C}.wem"
+     },
+     {
+      "Id": "711255537",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Voices, Efforts, Grunts, Male, Comical SND54339.wav",
+      "CachePath": "94/{948CE74E-19F2-47C9-FB66-05644C458EFC}.wem"
+     },
+     {
+      "Id": "761037407",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cartoon, Boing, Jump, Spring SND5944.wav",
+      "CachePath": "D5/{D55C0AE6-7C8C-BA28-5798-25CE2065FE42}.wem"
+     },
+     {
+      "Id": "943535364",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chorus02\\ThrillOfTheGun_chorus02_ORCHESTRA_144bpm_4-4.wav",
+      "CachePath": "AC/{ACB9C668-EFF7-2E69-0D99-9197D270AB0E}.wem"
+     },
+     {
+      "Id": "969002074",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bridge\\ThrillOfTheGun_bridge_S2_Bass_144bpm_4-4.wav",
+      "CachePath": "AB/{ABE5F315-1CB5-27DD-1AB0-1CF8C171061A}.wem"
+     },
+     {
+      "Id": "972471192",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chorus02\\ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4.wav",
+      "CachePath": "0B/{0BA0CBF3-43FF-714C-85D8-DDBB1D90BEA0}.wem"
+     },
+     {
+      "Id": "978943473",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "intro\\ThrillOfTheGun_intro_SYNTHS_144bpm_4-4.wav",
+      "CachePath": "44/{44F86642-7AD3-FD97-F254-32CA22FB4CBA}.wem"
+     },
+     {
+      "Id": "1011694801",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Open Tube by Mrthenoronha Id-369776.wav",
+      "CachePath": "CF/{CF4037A2-1479-7630-374A-EC84FD0BF909}.wem"
+     },
+     {
+      "Id": "1021173484",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "prechorus\\ThrillOfTheGun_prechorus_SYNTHS_144bpm_4-4.wav",
+      "CachePath": "2A/{2A2342DA-96B3-05C0-B9CE-11B933DF3C27}.wem"
+     },
+     {
+      "Id": "1029988049",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Bells, Gong, Kung Fu, Hit, Short SND44409.wav",
+      "CachePath": "65/{65E8747D-C98B-B72A-D098-6A75CE2A2611}.wem"
+     },
+     {
+      "Id": "1043364466",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "chorus01\\ThrillOfTheGun_chorus01_S2_CrazyBass_144bpm_4-4.wav",
+      "CachePath": "6C/{6C6CF24C-E08E-089F-CAA9-8BF6C5AE1782}.wem"
+     },
+     {
+      "Id": "1056886133",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "bridge\\ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4.wav",
+      "CachePath": "19/{199FEB1C-3927-D520-FA32-596F01BECEA6}.wem"
+     },
+     {
+      "Id": "1064788749",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "prechorus\\ThrillOfTheGun_prechorus_PERCUSSION_144bpm_4-4.wav",
+      "CachePath": "15/{1526BD3C-7ABF-FE90-60B7-569BB0DB4B50}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "4201676062",
+      "Name": "GAME_BOOT",
+      "ObjectPath": "\\Events\\Default Work Unit\\UTIL\\GAME_BOOT",
+      "GUID": "{DF666D7A-60F5-4354-BABB-19DE16F1E2FE}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "105354765"
+       },
+       {
+        "Id": "644145168"
+       },
+       {
+        "Id": "972471192"
+       },
+       {
+        "Id": "1056886133"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3589896044",
+         "Id": "3705726509",
+         "GUID": "{26DE0C7F-65D3-43A3-9DB7-3E1377158006}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "766723505",
+           "Id": "0",
+           "GUID": "{63000463-79EB-4BAB-9092-238C5B035F1C}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "5811615"
+           },
+           {
+            "Id": "105354765"
+           },
+           {
+            "Id": "552697585"
+           },
+           {
+            "Id": "644145168"
+           },
+           {
+            "Id": "978943473"
+           },
+           {
+            "Id": "1021173484"
+           },
+           {
+            "Id": "1064788749"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3589896044",
+         "Id": "702482391",
+         "GUID": "{9A0AC514-BB41-4503-9C60-CBCB8FFB3D4D}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "766723505",
+           "Id": "1160234136",
+           "GUID": "{E8B4C2F3-A44E-4E4D-B773-5D311ABA825D}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "18536132"
+           },
+           {
+            "Id": "95594223"
+           },
+           {
+            "Id": "165152800"
+           },
+           {
+            "Id": "306425354"
+           },
+           {
+            "Id": "370447945"
+           },
+           {
+            "Id": "453798752"
+           },
+           {
+            "Id": "579290775"
+           },
+           {
+            "Id": "638703449"
+           },
+           {
+            "Id": "943535364"
+           },
+           {
+            "Id": "972471192"
+           },
+           {
+            "Id": "1043364466"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "3589896044",
+         "Id": "702482391",
+         "GUID": "{9A0AC514-BB41-4503-9C60-CBCB8FFB3D4D}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "State",
+           "GroupId": "766723505",
+           "Id": "3064974266",
+           "GUID": "{78DFD81B-962F-46BB-98D2-80714E8CF36A}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "114473070"
+           },
+           {
+            "Id": "241924347"
+           },
+           {
+            "Id": "563331883"
+           },
+           {
+            "Id": "589466004"
+           },
+           {
+            "Id": "969002074"
+           },
+           {
+            "Id": "1056886133"
+           }
+          ]
+         }
+        ]
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "766723505",
+        "Id": "1160234136",
+        "Name": "Normal",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_STATE\\Normal",
+        "GUID": "{E8B4C2F3-A44E-4E4D-B773-5D311ABA825D}"
+       },
+       {
+        "GroupId": "3589896044",
+        "Id": "3705726509",
+        "Name": "Title",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_FSM\\Title",
+        "GUID": "{26DE0C7F-65D3-43A3-9DB7-3E1377158006}"
+       }
+      ]
+     },
+     {
+      "Id": "2682934687",
+      "Name": "Play_shotgun_fire",
+      "ObjectPath": "\\Events\\Default Work Unit\\GAMEPLAY\\Play_shotgun_fire",
+      "GUID": "{5979D449-535E-4A3B-A6AB-DDAD222987C3}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.6082236",
+      "DurationMax": "0.72330385",
+      "MediaRefs": [
+       {
+        "Id": "346378259"
+       },
+       {
+        "Id": "588175878"
+       },
+       {
+        "Id": "1011694801"
+       }
+      ]
+     },
+     {
+      "Id": "2277574539",
+      "Name": "Play_shotgun_jump",
+      "ObjectPath": "\\Events\\Default Work Unit\\GAMEPLAY\\Play_shotgun_jump",
+      "GUID": "{01E1D112-4FAA-4D91-9DA8-6BDB3DD05D4D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.3211923",
+      "DurationMax": "0.36052614",
+      "MediaRefs": [
+       {
+        "Id": "761037407"
+       }
+      ]
+     },
+     {
+      "Id": "1886223524",
+      "Name": "PlayerDied",
+      "ObjectPath": "\\Events\\Default Work Unit\\GAMEPLAY\\PlayerDied",
+      "GUID": "{7C55955C-6AF2-457A-B774-6F0B3DB8F4D4}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.214322",
+      "DurationMax": "2.6332877",
+      "MediaRefs": [
+       {
+        "Id": "1029988049"
+       }
+      ],
+      "ActionPostEvent": [
+       {
+        "Id": "136861954",
+        "Name": "Set_Player_Dead",
+        "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_Player_Dead",
+        "GUID": "{E90E9E7F-F05C-4674-9C7D-D2A19CABD64A}"
+       }
+      ]
+     },
+     {
+      "Id": "3537581393",
+      "Name": "PlayerHurt",
+      "ObjectPath": "\\Events\\Default Work Unit\\GAMEPLAY\\PlayerHurt",
+      "GUID": "{5E4A79AD-DDC1-484F-AC50-2F9BD5C1D1AA}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.31319538",
+      "DurationMax": "0.37245417",
+      "MediaRefs": [
+       {
+        "Id": "711255537"
+       }
+      ]
+     },
+     {
+      "Id": "136861954",
+      "Name": "Set_Player_Dead",
+      "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_Player_Dead",
+      "GUID": "{E90E9E7F-F05C-4674-9C7D-D2A19CABD64A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3892237736",
+      "Name": "Set_Player_Not_Dead",
+      "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_Player_Not_Dead",
+      "GUID": "{424DB514-4639-4F86-98A7-0803110A8638}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "4207344442",
+      "Name": "Set_State_Game",
+      "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_State_Game",
+      "GUID": "{3E471E5F-C608-4ADA-BA65-7B3FEC53EA12}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3589896044",
+        "Id": "702482391",
+        "Name": "Game",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_FSM\\Game",
+        "GUID": "{9A0AC514-BB41-4503-9C60-CBCB8FFB3D4D}"
+       }
+      ]
+     },
+     {
+      "Id": "2630068541",
+      "Name": "Set_State_Normal",
+      "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_State_Normal",
+      "GUID": "{8E5DCDEC-6E94-4854-86B8-D50CFA6E9DD0}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "766723505",
+        "Id": "1160234136",
+        "Name": "Normal",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_STATE\\Normal",
+        "GUID": "{E8B4C2F3-A44E-4E4D-B773-5D311ABA825D}"
+       }
+      ]
+     },
+     {
+      "Id": "2058646701",
+      "Name": "Set_State_Special",
+      "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_State_Special",
+      "GUID": "{EFADFDC6-B078-4258-B904-7E4CADEE95A6}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "766723505",
+        "Id": "3064974266",
+        "Name": "Special",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_STATE\\Special",
+        "GUID": "{78DFD81B-962F-46BB-98D2-80714E8CF36A}"
+       }
+      ]
+     },
+     {
+      "Id": "2875859334",
+      "Name": "Set_State_Title",
+      "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_State_Title",
+      "GUID": "{1C4B7AA8-A865-4FC0-80FA-24EDDC638A86}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3589896044",
+        "Id": "3705726509",
+        "Name": "Title",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_FSM\\Title",
+        "GUID": "{26DE0C7F-65D3-43A3-9DB7-3E1377158006}"
+       }
+      ]
+     },
+     {
+      "Id": "1061087905",
+      "Name": "TO_GAMEPLAY",
+      "ObjectPath": "\\Events\\Default Work Unit\\UTIL\\TO_GAMEPLAY",
+      "GUID": "{C56D4143-EC4C-4B4E-B6EA-55CE34EF27AF}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionPostEvent": [
+       {
+        "Id": "2630068541",
+        "Name": "Set_State_Normal",
+        "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_State_Normal",
+        "GUID": "{8E5DCDEC-6E94-4854-86B8-D50CFA6E9DD0}"
+       },
+       {
+        "Id": "3892237736",
+        "Name": "Set_Player_Not_Dead",
+        "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_Player_Not_Dead",
+        "GUID": "{424DB514-4639-4F86-98A7-0803110A8638}"
+       },
+       {
+        "Id": "4207344442",
+        "Name": "Set_State_Game",
+        "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_State_Game",
+        "GUID": "{3E471E5F-C608-4ADA-BA65-7B3FEC53EA12}"
+       }
+      ]
+     },
+     {
+      "Id": "1465864013",
+      "Name": "TO_TITLE",
+      "ObjectPath": "\\Events\\Default Work Unit\\UTIL\\TO_TITLE",
+      "GUID": "{6AC6BEAE-92B3-40CD-996D-5A6A872AE950}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionPostEvent": [
+       {
+        "Id": "2630068541",
+        "Name": "Set_State_Normal",
+        "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_State_Normal",
+        "GUID": "{8E5DCDEC-6E94-4854-86B8-D50CFA6E9DD0}"
+       },
+       {
+        "Id": "2875859334",
+        "Name": "Set_State_Title",
+        "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_State_Title",
+        "GUID": "{1C4B7AA8-A865-4FC0-80FA-24EDDC638A86}"
+       },
+       {
+        "Id": "3892237736",
+        "Name": "Set_Player_Not_Dead",
+        "ObjectPath": "\\Events\\Default Work Unit\\STATES\\Set_Player_Not_Dead",
+        "GUID": "{424DB514-4639-4F86-98A7-0803110A8638}"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "4166321325",
+      "Name": "Music_PlayRate",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Music_PlayRate",
+      "GUID": "{BE7712C7-6873-496D-9310-D3584FCB9007}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "766723505",
+      "Name": "GAME_STATE",
+      "ObjectPath": "\\States\\Default Work Unit\\GAME_STATE",
+      "GUID": "{63000463-79EB-4BAB-9092-238C5B035F1C}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_STATE\\None",
+        "GUID": "{9EF54BA2-028F-41E1-8745-F1E73ED63BCB}"
+       },
+       {
+        "Id": "1160234136",
+        "Name": "Normal",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_STATE\\Normal",
+        "GUID": "{E8B4C2F3-A44E-4E4D-B773-5D311ABA825D}"
+       },
+       {
+        "Id": "3064974266",
+        "Name": "Special",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_STATE\\Special",
+        "GUID": "{78DFD81B-962F-46BB-98D2-80714E8CF36A}"
+       }
+      ]
+     },
+     {
+      "Id": "3589896044",
+      "Name": "GAME_FSM",
+      "ObjectPath": "\\States\\Default Work Unit\\GAME_FSM",
+      "GUID": "{95614F8C-3E31-4100-9328-71C1B15797D5}",
+      "States": [
+       {
+        "Id": "702482391",
+        "Name": "Game",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_FSM\\Game",
+        "GUID": "{9A0AC514-BB41-4503-9C60-CBCB8FFB3D4D}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_FSM\\None",
+        "GUID": "{A71D3D95-307F-4E25-9740-ABDA30C1A9C8}"
+       },
+       {
+        "Id": "3705726509",
+        "Name": "Title",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_FSM\\Title",
+        "GUID": "{26DE0C7F-65D3-43A3-9DB7-3E1377158006}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{DF1B8829-FD0D-95FA-7C1A-0306949ECB0C}"
+ }
+}

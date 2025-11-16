@@ -1,0 +1,62 @@
+Event	ID	Name			Wwise Object Path	Notes
+	136861954	Set_Player_Dead			\Default Work Unit\STATES\Set_Player_Dead	
+	1061087905	TO_GAMEPLAY			\Default Work Unit\UTIL\TO_GAMEPLAY	
+	1465864013	TO_TITLE			\Default Work Unit\UTIL\TO_TITLE	
+	1886223524	PlayerDied			\Default Work Unit\GAMEPLAY\PlayerDied	
+	2058646701	Set_State_Special			\Default Work Unit\STATES\Set_State_Special	
+	2277574539	Play_shotgun_jump			\Default Work Unit\GAMEPLAY\Play_shotgun_jump	
+	2630068541	Set_State_Normal			\Default Work Unit\STATES\Set_State_Normal	
+	2682934687	Play_shotgun_fire			\Default Work Unit\GAMEPLAY\Play_shotgun_fire	
+	2875859334	Set_State_Title			\Default Work Unit\STATES\Set_State_Title	
+	3537581393	PlayerHurt			\Default Work Unit\GAMEPLAY\PlayerHurt	
+	3892237736	Set_Player_Not_Dead			\Default Work Unit\STATES\Set_Player_Not_Dead	
+	4201676062	GAME_BOOT			\Default Work Unit\UTIL\GAME_BOOT	
+	4207344442	Set_State_Game			\Default Work Unit\STATES\Set_State_Game	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	766723505	GAME_STATE			\Default Work Unit\GAME_STATE	
+	3589896044	GAME_FSM			\Default Work Unit\GAME_FSM	
+
+State	ID	Name	State Group			Notes
+	748895195	None	GAME_STATE			
+	1160234136	Normal	GAME_STATE			
+	3064974266	Special	GAME_STATE			
+	702482391	Game	GAME_FSM			
+	748895195	None	GAME_FSM			
+	3705726509	Title	GAME_FSM			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4166321325	Music_PlayRate			\Default Work Unit\Music_PlayRate	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	5811615	ThrillOfTheGun_intro_PERCUSSION_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\97\{976FF36C-9A95-BB75-AFD5-6A83B9986C2A}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\MainMenu\intro\ThrillOfTheGun_intro_PERCUSSION_144bpm_4-4		2358
+	18536132	ThrillOfTheGun_chorus01_SYNTHS_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\16\{16219D61-5491-1AEE-7B5A-86BACDA57FB4}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Gameplay\chorus01\ThrillOfTheGun_chorus01_SYNTHS_144bpm_4-4		488618
+	95594223	ThrillOfTheGun_chorus01_PERCUSSION_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\22\{22BDD2AE-2956-4BBD-710C-25D44681BFB0}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Gameplay\chorus01\ThrillOfTheGun_chorus01_PERCUSSION_144bpm_4-4		557344
+	105354765	ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\62\{6293A9D2-840A-AECA-86FB-668C4E74D243}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\MainMenu\prechorus\ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4		147130
+	114473070	ThrillOfTheGun_bridge_ORCHESTRA_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\35\{35599234-2345-73D5-7BD1-FCEE98152DB5}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Special\bridge\ThrillOfTheGun_bridge_ORCHESTRA_144bpm_4-4		597181
+	165152800	ThrillOfTheGun_chorus02_S2_CrazyBass_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\FC\{FC310B6C-2C33-C3EE-8229-19FB357AF16F}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Gameplay\chorus02\ThrillOfTheGun_chorus02_S2_CrazyBass_144bpm_4-4		470061
+	241924347	ThrillOfTheGun_bridge_PERCUSSION_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\70\{702E7D6E-56B9-9ADE-C877-1FAA8380653A}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Special\bridge\ThrillOfTheGun_bridge_PERCUSSION_144bpm_4-4		666527
+	306425354	ThrillOfTheGun_chorus01_S2_Bass_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\FA\{FA7D4C7B-3F4D-1F42-DF9F-D2C44BA1572C}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Gameplay\chorus01\ThrillOfTheGun_chorus01_S2_Bass_144bpm_4-4		375637
+	346378259	Explosions, Real, Heavy Explosion, Crunchy Blasts, Echo SND122487	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\0F\{0F10EE4A-8E5F-B32F-B6D4-D2902A80D865}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gameplay\Shotgun\shotgun_fire\Explosions, Real, Heavy Explosion, Crunchy Blasts, Echo SND122487		129968
+	370447945	ThrillOfTheGun_chorus01_RISERIMPACTS_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\94\{94049699-1061-FE74-29CB-59650FE9DCA6}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Gameplay\chorus01\ThrillOfTheGun_chorus01_RISERIMPACTS_144bpm_4-4		157120
+	453798752	ThrillOfTheGun_chorus01_ORCHESTRA_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\05\{05590356-BE58-4D24-BF6B-970870EEA8DD}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Gameplay\chorus01\ThrillOfTheGun_chorus01_ORCHESTRA_144bpm_4-4		181791
+	552697585	ThrillOfTheGun_prechorus_ORCHESTRA_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\F3\{F3C89075-7456-52A4-C7F2-7AB98E3BD8EA}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\MainMenu\prechorus\ThrillOfTheGun_prechorus_ORCHESTRA_144bpm_4-4		329118
+	563331883	ThrillOfTheGun_bridge_S2_CrazyBass_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\88\{8812DB31-F8DD-5D42-C33C-3813CA24970E}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Special\bridge\ThrillOfTheGun_bridge_S2_CrazyBass_144bpm_4-4		630136
+	579290775	ThrillOfTheGun_chorus02_SYNTHS_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\7C\{7C92B1EF-989B-2084-5209-27BA8E5E0BF9}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Gameplay\chorus02\ThrillOfTheGun_chorus02_SYNTHS_144bpm_4-4		463994
+	588175878	Explosions, Real, Boom, Distant Explosion 02 SND46328	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\04\{04AEB955-00EA-3C31-4BF7-AC13DFEA5592}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gameplay\Shotgun\shotgun_fire\Explosions, Real, Boom, Distant Explosion 02 SND46328		194236
+	589466004	ThrillOfTheGun_bridge_SYNTHS_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\A6\{A6962F4D-30C0-23D7-F0DE-1FB5495871B4}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Special\bridge\ThrillOfTheGun_bridge_SYNTHS_144bpm_4-4		663428
+	638703449	ThrillOfTheGun_chorus02_PERCUSSION_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\32\{32E8A3E9-9250-6AC0-A488-3650EB7E5DC3}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Gameplay\chorus02\ThrillOfTheGun_chorus02_PERCUSSION_144bpm_4-4		560406
+	644145168	ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\CD\{CD27BBFB-196A-A987-B7F0-CC53CE47749C}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\MainMenu\prechorus\ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4		476840
+	711255537	Voices, Efforts, Grunts, Male, Comical SND54339	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\94\{948CE74E-19F2-47C9-FB66-05644C458EFC}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gameplay\PlayerHurt\Voices, Efforts, Grunts, Male, Comical SND54339		47824
+	761037407	Cartoon, Boing, Jump, Spring SND5944	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\D5\{D55C0AE6-7C8C-BA28-5798-25CE2065FE42}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gameplay\Shotgun\shotgun_jump\Cartoon, Boing, Jump, Spring SND5944		71344
+	943535364	ThrillOfTheGun_chorus02_ORCHESTRA_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\AC\{ACB9C668-EFF7-2E69-0D99-9197D270AB0E}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Gameplay\chorus02\ThrillOfTheGun_chorus02_ORCHESTRA_144bpm_4-4		298436
+	969002074	ThrillOfTheGun_bridge_S2_Bass_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\AB\{ABE5F315-1CB5-27DD-1AB0-1CF8C171061A}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Special\bridge\ThrillOfTheGun_bridge_S2_Bass_144bpm_4-4		840970
+	972471192	ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\0B\{0BA0CBF3-43FF-714C-85D8-DDBB1D90BEA0}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Gameplay\chorus02\ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4		424340
+	978943473	ThrillOfTheGun_intro_SYNTHS_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\44\{44F86642-7AD3-FD97-F254-32CA22FB4CBA}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\MainMenu\intro\ThrillOfTheGun_intro_SYNTHS_144bpm_4-4		174215
+	1011694801	Open Tube by Mrthenoronha Id-369776	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\CF\{CF4037A2-1479-7630-374A-EC84FD0BF909}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gameplay\Shotgun\shotgun_fire\Open Tube by Mrthenoronha Id-369776		23568
+	1021173484	ThrillOfTheGun_prechorus_SYNTHS_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\2A\{2A2342DA-96B3-05C0-B9CE-11B933DF3C27}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\MainMenu\prechorus\ThrillOfTheGun_prechorus_SYNTHS_144bpm_4-4		509000
+	1029988049	Bells, Gong, Kung Fu, Hit, Short SND44409	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\65\{65E8747D-C98B-B72A-D098-6A75CE2A2611}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gameplay\PlayerDied\Bells, Gong, Kung Fu, Hit, Short SND44409		347424
+	1043364466	ThrillOfTheGun_chorus01_S2_CrazyBass_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\6C\{6C6CF24C-E08E-089F-CAA9-8BF6C5AE1782}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Gameplay\chorus01\ThrillOfTheGun_chorus01_S2_CrazyBass_144bpm_4-4		496794
+	1056886133	ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\19\{199FEB1C-3927-D520-FA32-596F01BECEA6}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\Special\bridge\ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4		167917
+	1064788749	ThrillOfTheGun_prechorus_PERCUSSION_144bpm_4-4	F:\GitHub\GameJamPlusDigiPen\shotgame\shotgame_WwiseProject\.cache\15\{1526BD3C-7ABF-FE90-60B7-569BB0DB4B50}.wem		\Interactive Music Hierarchy\Default Work Unit\ThrillOfTheGun\MainMenu\prechorus\ThrillOfTheGun_prechorus_PERCUSSION_144bpm_4-4		543119
+

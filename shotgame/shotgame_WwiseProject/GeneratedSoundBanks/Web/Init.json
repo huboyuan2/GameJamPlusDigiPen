@@ -1,0 +1,137 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Web",
+  "BasePlatform": "Web",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{A1070E10-2EAD-7679-EC54-0F09B1FE3EBE}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\No_Output",
+       "GUID": "{6E9481E7-000B-4B22-A20E-F29533EC164C}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Audio Devices\\Default Work Unit\\System",
+       "GUID": "{34AD61F9-0F4E-4420-A823-C499FAED6B3F}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\SFX",
+      "GUID": "{C13D7327-BA11-4DF3-B527-B897C2D9FF85}",
+      "Color": "19"
+     },
+     {
+      "Id": "712897226",
+      "Name": "MUS",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\MUS",
+      "GUID": "{2CD44ED4-A221-4A8B-B540-9BA0F971F717}",
+      "Color": "12"
+     },
+     {
+      "Id": "3803692087",
+      "Name": "Master Audio Bus",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3628477563",
+      "Name": "VOLUME_MUS",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\VOLUME_MUS",
+      "GUID": "{DA838A64-FA11-4553-8D5A-A579B4DA5756}"
+     },
+     {
+      "Id": "3673881719",
+      "Name": "VOLUME_SFX",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\VOLUME_SFX",
+      "GUID": "{9553B1B3-0289-48CE-80B5-A0CFA74BB336}"
+     },
+     {
+      "Id": "4166321325",
+      "Name": "Music_PlayRate",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Music_PlayRate",
+      "GUID": "{BE7712C7-6873-496D-9310-D3584FCB9007}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "766723505",
+      "Name": "GAME_STATE",
+      "ObjectPath": "\\States\\Default Work Unit\\GAME_STATE",
+      "GUID": "{63000463-79EB-4BAB-9092-238C5B035F1C}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_STATE\\None",
+        "GUID": "{9EF54BA2-028F-41E1-8745-F1E73ED63BCB}"
+       },
+       {
+        "Id": "1160234136",
+        "Name": "Normal",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_STATE\\Normal",
+        "GUID": "{E8B4C2F3-A44E-4E4D-B773-5D311ABA825D}"
+       },
+       {
+        "Id": "3064974266",
+        "Name": "Special",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_STATE\\Special",
+        "GUID": "{78DFD81B-962F-46BB-98D2-80714E8CF36A}"
+       }
+      ]
+     },
+     {
+      "Id": "3589896044",
+      "Name": "GAME_FSM",
+      "ObjectPath": "\\States\\Default Work Unit\\GAME_FSM",
+      "GUID": "{95614F8C-3E31-4100-9328-71C1B15797D5}",
+      "States": [
+       {
+        "Id": "702482391",
+        "Name": "Game",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_FSM\\Game",
+        "GUID": "{9A0AC514-BB41-4503-9C60-CBCB8FFB3D4D}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_FSM\\None",
+        "GUID": "{A71D3D95-307F-4E25-9740-ABDA30C1A9C8}"
+       },
+       {
+        "Id": "3705726509",
+        "Name": "Title",
+        "ObjectPath": "\\States\\Default Work Unit\\GAME_FSM\\Title",
+        "GUID": "{26DE0C7F-65D3-43A3-9DB7-3E1377158006}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{77B5257A-80F6-7763-E01E-810ADDACBD54}"
+ }
+}

@@ -1,0 +1,2749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}" SchemaVersion="123">
+	<InteractiveMusic>
+		<WorkUnit Name="Default Work Unit" ID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSwitchContainer Name="ThrillOfTheGun" ID="{8560C4D9-16BF-463B-8A56-C337DEDD66A0}" ShortID="562167564">
+					<PropertyList>
+						<Property Name="MakeUpGain" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Tempo" Type="Real64" Value="144"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Vorbis Quality Medium" ID="{01D20CF3-9A4C-4EEE-AE3E-2942B47543E9}" WorkUnitID="{F6B2880C-85E5-47FA-A126-645B5DFD9ACC}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="MUS" ID="{2CD44ED4-A221-4A8B-B540-9BA0F971F717}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{8EA27C9C-67E6-4523-BA75-03D065128F02}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{CA819754-7091-4D14-B006-DD4EEE724007}">
+											<TransitionInfo/>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{C73B794E-2DB8-4B6B-9336-3095BDC1FFC4}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Special" ID="{141F3B5D-CED2-4AC4-A52E-069EBC6C267A}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<TransitionObjectRef Name="fill_02" ID="{A6CEFBE2-ACC6-4AF1-A36B-5BBB060A9EF2}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{B6548EAF-248A-40D1-A4EC-4F5477DEC6A5}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="8"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.8"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{51406CF7-999E-4BD9-AC2F-D47232CFF308}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="4"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Gameplay" ID="{25A887AF-CF39-40BF-849B-2489B0DF9AFF}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Special" ID="{141F3B5D-CED2-4AC4-A52E-069EBC6C267A}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<TransitionObjectRef Name="fill_03" ID="{D927D600-1F0A-4645-8028-4BCE64A1366E}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{5A0EA609-05D4-49D7-B262-E750CB0B1B5B}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{C123EEB5-CD9D-49E9-A37C-B4B0A4679438}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="1"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="MainMenu" ID="{EFCA7BD3-F597-450F-AC09-93EF017B09B4}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="Gameplay" ID="{25A887AF-CF39-40BF-849B-2489B0DF9AFF}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<JumpToPlaylistItemRef Name="" ID="{3C0B59A1-701D-435C-91C3-B6AD6EC4CA02}"/>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{6E17113F-C7C2-42CA-9AEF-42BA850B62BD}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="0.1"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{24AAEB6E-EE9C-40C9-B7DB-80417A4C5CF9}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Gameplay" ID="{25A887AF-CF39-40BF-849B-2489B0DF9AFF}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="MainMenu" ID="{EFCA7BD3-F597-450F-AC09-93EF017B09B4}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<TransitionObjectRef Name="fill_01" ID="{9EE311C9-49F0-4389-B92A-A1DF08B57867}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{B76674CE-C7F7-4FAE-BB5B-166DD12F19E2}">
+														<PropertyList>
+															<Property Name="FadeCurve" Type="int16" Value="7"/>
+															<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+											</TransitionInfo>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="MainMenu" ID="{EFCA7BD3-F597-450F-AC09-93EF017B09B4}" ShortID="599703433">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{491B9751-F8D6-487B-B0FF-6CD3F0487920}" ShortID="759714923">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{2609F5CF-C1E2-4ECA-8B6D-832788FF9491}" ShortID="64443333">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="intro" ID="{5D5C421A-BF6E-404F-BAE5-B7817159A2A9}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{3C0B59A1-701D-435C-91C3-B6AD6EC4CA02}" ShortID="236898702">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{762F0152-FC67-442E-8440-9553C89DD49F}" ShortID="148386060">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="prechorus" ID="{C6E1B14E-0332-421C-A8F4-928B2E28D4D1}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{FD4AEC4E-AFCE-45DB-92AB-BADC694FA80E}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{76F9DC2A-5BBE-4004-9F6D-FDD59D2554BB}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="intro" ID="{5D5C421A-BF6E-404F-BAE5-B7817159A2A9}" ShortID="59987676">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="13333.3333333333"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ThrillOfTheGun_intro_PERCUSSION_144bpm_4-4" ID="{D488C1E8-77C3-473E-965F-CA94D1DEDAAF}" ShortID="917713065">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{7A8CE54A-FDAA-4C44-8519-1CBBF9488E96}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_intro_PERCUSSION_144bpm_4-4" ID="{617F337C-D0CB-4A23-AD11-8E627FD778BD}">
+													<Language>SFX</Language>
+													<AudioFile>intro\ThrillOfTheGun_intro_PERCUSSION_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="5811615"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{809E6A92-8AE8-4C70-AE9B-30E8919F3C50}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_intro_PERCUSSION_144bpm_4-4" ID="{B6BAE7F5-C6BE-4C06-B3EA-FFF22D0D9471}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="13333.3333333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_intro_PERCUSSION_144bpm_4-4" ID="{617F337C-D0CB-4A23-AD11-8E627FD778BD}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_intro_SYNTHS_144bpm_4-4" ID="{53922E0F-E0FB-465E-A19A-0E1733EA47A3}" ShortID="381216134">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{68469AA0-A9F7-4D1A-90EA-9EAFBA81A85E}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_intro_SYNTHS_144bpm_4-4" ID="{EC7B53D3-8252-48E6-AF8E-6CF1717C158E}">
+													<Language>SFX</Language>
+													<AudioFile>intro\ThrillOfTheGun_intro_SYNTHS_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="978943473"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{42B85B28-685B-40BC-AD25-141C8FEC6775}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_intro_SYNTHS_144bpm_4-4" ID="{9F7DDA99-EAED-4D46-B22A-9D88B3C06534}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="13333.3333333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_intro_SYNTHS_144bpm_4-4" ID="{EC7B53D3-8252-48E6-AF8E-6CF1717C158E}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{5426206A-DCDF-4F9A-93A7-AD89081B9D88}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{7A8F93AE-13BF-4E18-ABCB-FB5CA7102B79}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="13333.3333333333"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="prechorus" ID="{C6E1B14E-0332-421C-A8F4-928B2E28D4D1}" ShortID="245737431">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="40000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ThrillOfTheGun_prechorus_ORCHESTRA_144bpm_4-4" ID="{2565D475-AA84-4BD8-9C31-099D449613BF}" ShortID="358618271">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{FF94F952-BCA8-47E1-8ED4-1141F95B68AA}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_prechorus_ORCHESTRA_144bpm_4-4" ID="{EAE7090C-EF48-4712-B487-946DF32AF1DC}">
+													<Language>SFX</Language>
+													<AudioFile>prechorus\ThrillOfTheGun_prechorus_ORCHESTRA_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="552697585"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{82794BBA-7CAB-4246-B0E0-2E4E12E90D3F}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_prechorus_ORCHESTRA_144bpm_4-4" ID="{96B5822E-A825-4DC5-89F7-26384043CCF9}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_prechorus_ORCHESTRA_144bpm_4-4" ID="{EAE7090C-EF48-4712-B487-946DF32AF1DC}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_prechorus_PERCUSSION_144bpm_4-4" ID="{627AEC73-D092-4C9C-B1C6-DAE9EA804BC0}" ShortID="135268905">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{AF0A970A-B065-4955-874B-F8A7F92CF1A0}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_prechorus_PERCUSSION_144bpm_4-4" ID="{E7987AD9-B17D-4321-BE60-6D856658AB84}">
+													<Language>SFX</Language>
+													<AudioFile>prechorus\ThrillOfTheGun_prechorus_PERCUSSION_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1064788749"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{B3F11A33-8D1C-4E1D-B952-68CE0F253C2B}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_prechorus_PERCUSSION_144bpm_4-4" ID="{6A57A708-BF1E-4099-9743-5463271ED4D2}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_prechorus_PERCUSSION_144bpm_4-4" ID="{E7987AD9-B17D-4321-BE60-6D856658AB84}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4" ID="{AE6E00B3-2929-4DD6-A34C-8BA10AD5AC68}" ShortID="57376100">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{972CBB0E-6DBB-452E-8712-A0EEEF100D5A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4" ID="{15FB330F-EA8C-43B9-827B-9DBEC7CA7770}">
+													<Language>SFX</Language>
+													<AudioFile>prechorus\ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="105354765"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4134278B-1C96-4708-BC4D-C6C636851C3F}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4" ID="{A676B101-9727-4EC4-B1E7-73AEA8F5AA4E}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="36666.6666666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4" ID="{15FB330F-EA8C-43B9-827B-9DBEC7CA7770}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{980700B4-7435-406C-A50C-D6317AADA629}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>36.66667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{3B2DA8DA-F78E-4DC4-BDAF-CD310F7942F7}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>36.66667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{92922151-B8ED-496F-B7BB-B42F146C5D88}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>36.66667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4" ID="{CAE50451-CFFE-42CA-B76C-F9794A14181B}" ShortID="566090307">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{4E396432-3497-4624-B6FF-EC1D775E48CA}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4" ID="{B2897634-2874-49C3-BA7F-1D30570F3B2D}">
+													<Language>SFX</Language>
+													<AudioFile>prechorus\ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="644145168"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{3B649F4F-BC11-4E92-A445-B6EE7A358B29}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4" ID="{D1861298-313B-4ADB-A214-82615E24FC1A}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="36666.6666666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4" ID="{B2897634-2874-49C3-BA7F-1D30570F3B2D}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{A9CD7317-5653-4A8F-BA8D-FD588E2A0ECC}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>36.66667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{52130E88-0D59-4A32-B327-83A257E39BB3}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>36.66667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{8371385C-376F-4421-A404-9A141DAC15EB}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>36.66667</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4" ID="{20026523-2E12-4352-89CE-6F5390EF1C6D}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="36666.6666666667"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4" ID="{B2897634-2874-49C3-BA7F-1D30570F3B2D}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_prechorus_SYNTHS_144bpm_4-4" ID="{6C6CC100-306B-4859-B0F3-DBD74D1808ED}" ShortID="214214071">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{53FF9D7A-0F94-4782-89E6-ADAB9AD47DA0}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_prechorus_SYNTHS_144bpm_4-4" ID="{F0B2B540-78BD-4DC4-BE10-BD3C2494F198}">
+													<Language>SFX</Language>
+													<AudioFile>prechorus\ThrillOfTheGun_prechorus_SYNTHS_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1021173484"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{0D5656C3-5C0A-4EA9-8821-B5F941C121F8}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_prechorus_SYNTHS_144bpm_4-4" ID="{04E4872D-806A-43CB-B197-E349EDCF96EC}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_prechorus_SYNTHS_144bpm_4-4" ID="{F0B2B540-78BD-4DC4-BE10-BD3C2494F198}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{51FB8599-2873-48A8-8550-583AB1183E57}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{B5E5DB71-03B0-4693-A152-680F767D76F4}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="40000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Gameplay" ID="{25A887AF-CF39-40BF-849B-2489B0DF9AFF}" ShortID="551315319">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{E77C1480-3F25-4384-962D-AAEA4DD9EA46}" ShortID="19201390">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{E0D7CD3D-1987-448D-A4FD-F0E7A64AFCD1}" ShortID="157562555">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="chorus01" ID="{EDCE0448-820F-46E2-A1F0-14B8E7AAAB8A}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{55260952-F051-4B8A-B25C-32A0D732547B}" ShortID="214935113">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="chorus02" ID="{995F5E37-A22D-4D01-8C6E-890DFAFD6C22}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{E4DA6E1B-40ED-4069-97AB-B3CF29A39ABA}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{B9AF0B93-E8A8-4A76-B80C-CB3C258DA453}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="chorus02" ID="{995F5E37-A22D-4D01-8C6E-890DFAFD6C22}" ShortID="73724677">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="40000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MUS" ID="{2CD44ED4-A221-4A8B-B540-9BA0F971F717}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ThrillOfTheGun_chorus02_ORCHESTRA_144bpm_4-4" ID="{CA037086-47C1-40BE-B83A-A4B024AA3A6E}" ShortID="21949282">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{F8580431-171E-445E-827A-0A04E0540732}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_chorus02_ORCHESTRA_144bpm_4-4" ID="{9FB41C73-E685-4966-895D-DB85D2B2DE60}">
+													<Language>SFX</Language>
+													<AudioFile>chorus02\ThrillOfTheGun_chorus02_ORCHESTRA_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="943535364"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{90DEFA9B-297B-4A20-93D2-1694DC777C57}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_chorus02_ORCHESTRA_144bpm_4-4" ID="{ADC93A19-62E2-469C-BA88-07FCC306C284}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_chorus02_ORCHESTRA_144bpm_4-4" ID="{9FB41C73-E685-4966-895D-DB85D2B2DE60}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_chorus02_PERCUSSION_144bpm_4-4" ID="{FCFF959C-5A7D-42FA-A3E7-46E790B1B2D7}" ShortID="505574242">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{9E40BED5-2DCE-4CBA-96A3-600B802CF978}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_chorus02_PERCUSSION_144bpm_4-4" ID="{7F6A614E-4E69-4AE6-A4E6-D62F94EA5CAB}">
+													<Language>SFX</Language>
+													<AudioFile>chorus02\ThrillOfTheGun_chorus02_PERCUSSION_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="638703449"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D07B5FF6-995D-44E7-8DC9-7989F20D2069}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_chorus02_PERCUSSION_144bpm_4-4" ID="{0064D3E9-C684-40FC-8F94-9064AA9B3713}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_chorus02_PERCUSSION_144bpm_4-4" ID="{7F6A614E-4E69-4AE6-A4E6-D62F94EA5CAB}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4" ID="{E9021D32-0D63-43D5-87A4-20EED2103177}" ShortID="893838213">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{FAB8F823-1416-438E-ADD1-7AFF961519F4}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4" ID="{8BF1748D-3C0E-43EA-A431-CF2D5D330EB7}">
+													<Language>SFX</Language>
+													<AudioFile>chorus02\ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="972471192"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4F92480A-3B1C-4994-825B-CF0BFA230FB6}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4" ID="{A6F74B95-3A17-46E3-AC71-91DA98B73AB3}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="38333.3333333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4" ID="{8BF1748D-3C0E-43EA-A431-CF2D5D330EB7}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{E7646201-6E6C-4366-81EB-202FA98A605B}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>38.33333</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{3EFD465F-7AB2-48A9-BD69-F4057ED7F4BB}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>38.33333</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{21CB04C6-EC76-42C9-9E84-8354DDD239BA}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>38.33333</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_chorus02_S2_CrazyBass_144bpm_4-4" ID="{58A1B554-0310-472D-A72E-691AE3093CD3}" ShortID="751127205">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{3F639DD8-C368-499A-86C3-04C6B799B994}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_chorus02_S2_CrazyBass_144bpm_4-4" ID="{DD63E9EF-4F3E-4DA3-8238-B8FD1877096C}">
+													<Language>SFX</Language>
+													<AudioFile>chorus02\ThrillOfTheGun_chorus02_S2_CrazyBass_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="165152800"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{EFCA82ED-F51F-497F-976F-8518742EDACF}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_chorus02_S2_CrazyBass_144bpm_4-4" ID="{AF150BAD-5DA1-49D6-8FAB-C5902E550014}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_chorus02_S2_CrazyBass_144bpm_4-4" ID="{DD63E9EF-4F3E-4DA3-8238-B8FD1877096C}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_chorus02_SYNTHS_144bpm_4-4" ID="{5B0BF89F-E05C-445B-91EB-8CA1325C3A9C}" ShortID="1007358137">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{0011204E-9F56-455D-B263-EC1ACB83257A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_chorus02_SYNTHS_144bpm_4-4" ID="{2B6BC7FF-25FE-48AC-A81F-78F96682BD28}">
+													<Language>SFX</Language>
+													<AudioFile>chorus02\ThrillOfTheGun_chorus02_SYNTHS_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="579290775"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{F7B20097-3B36-4AD7-8315-810FE144B2F2}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_chorus02_SYNTHS_144bpm_4-4" ID="{A80BED67-BAA0-454D-A351-B96FD84EFD7B}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_chorus02_SYNTHS_144bpm_4-4" ID="{2B6BC7FF-25FE-48AC-A81F-78F96682BD28}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{74AE648B-6AE7-4772-88BE-FCE0C711729A}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{5F95D500-E881-4F63-8394-405BFF8E83BA}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="40000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="" ID="{BB4CC5C2-8C52-4BA3-B242-F95BB74BADE5}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="26666.6666666667"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="chorus01" ID="{EDCE0448-820F-46E2-A1F0-14B8E7AAAB8A}" ShortID="72393796">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="40000"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MUS" ID="{2CD44ED4-A221-4A8B-B540-9BA0F971F717}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ThrillOfTheGun_chorus01_ORCHESTRA_144bpm_4-4" ID="{AA9A030F-9EB9-4526-AF7D-23D7F038630C}" ShortID="214127429">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{6D8CA6BE-B77E-4381-919A-BB6F2D005767}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_chorus01_ORCHESTRA_144bpm_4-4" ID="{1C7E66F4-6B5B-4BE0-B4DE-8600B0495B17}">
+													<Language>SFX</Language>
+													<AudioFile>chorus01\ThrillOfTheGun_chorus01_ORCHESTRA_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="453798752"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{F4073FA7-B7C3-41AF-9373-E81CB18C705A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_chorus01_ORCHESTRA_144bpm_4-4" ID="{AB5DEA8D-F5CD-44BC-B9A9-429082C9C671}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_chorus01_ORCHESTRA_144bpm_4-4" ID="{1C7E66F4-6B5B-4BE0-B4DE-8600B0495B17}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_chorus01_PERCUSSION_144bpm_4-4" ID="{C080D6EB-E9CA-4EF0-8171-14F575090DBE}" ShortID="435145883">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{9B151F38-33A8-4EDD-8570-5C5F976F7FFB}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_chorus01_PERCUSSION_144bpm_4-4" ID="{F08F64A0-146A-4C04-9BA6-586A94E68184}">
+													<Language>SFX</Language>
+													<AudioFile>chorus01\ThrillOfTheGun_chorus01_PERCUSSION_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="95594223"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{42E33B3E-1F73-48E4-B0B6-84AC9F7EF956}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_chorus01_PERCUSSION_144bpm_4-4" ID="{F2FFE3BB-AC3B-4C3E-93C4-D38449BFFB9D}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_chorus01_PERCUSSION_144bpm_4-4" ID="{F08F64A0-146A-4C04-9BA6-586A94E68184}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_chorus01_RISERIMPACTS_144bpm_4-4" ID="{EA9B70DC-A415-4B67-AC36-63D4FEABAC0D}" ShortID="12692790">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{5DA85A89-BE73-4CE9-8817-8396D9E84670}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_chorus01_RISERIMPACTS_144bpm_4-4" ID="{9B40DAB7-4EEA-4408-91C6-91234308D92E}">
+													<Language>SFX</Language>
+													<AudioFile>chorus01\ThrillOfTheGun_chorus01_RISERIMPACTS_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="370447945"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{52A193DC-DDF9-4E06-9747-83CF9105C7A4}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_chorus01_RISERIMPACTS_144bpm_4-4" ID="{A097FFF0-8CA4-43B2-8C31-5AC92469338F}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_chorus01_RISERIMPACTS_144bpm_4-4" ID="{9B40DAB7-4EEA-4408-91C6-91234308D92E}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_chorus01_S2_Bass_144bpm_4-4" ID="{055BE498-4018-46F8-8EE1-B21512F4E06C}" ShortID="395615492">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{FD33771C-44F5-431B-A25E-C09B387DEF3E}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_chorus01_S2_Bass_144bpm_4-4" ID="{C0C8823D-28A3-4553-8399-5A4054478AAE}">
+													<Language>SFX</Language>
+													<AudioFile>chorus01\ThrillOfTheGun_chorus01_S2_Bass_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="306425354"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{60723C6F-E0B7-4396-9496-DB4AEC90D08B}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_chorus01_S2_Bass_144bpm_4-4" ID="{DECBCA52-E258-4108-8E79-BB2BD606ED49}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_chorus01_S2_Bass_144bpm_4-4" ID="{C0C8823D-28A3-4553-8399-5A4054478AAE}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_chorus01_S2_CrazyBass_144bpm_4-4" ID="{829FF14B-6A7C-4869-A3D5-43728A6DECC1}" ShortID="344363765">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{5167F34C-44B6-4ED4-8FF6-2EB582B0398E}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_chorus01_S2_CrazyBass_144bpm_4-4" ID="{5BD44202-AA58-4D14-B387-E867E9E62BFD}">
+													<Language>SFX</Language>
+													<AudioFile>chorus01\ThrillOfTheGun_chorus01_S2_CrazyBass_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1043364466"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4B75AA5C-554F-4305-8188-0D4FC1108C62}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_chorus01_S2_CrazyBass_144bpm_4-4" ID="{63880A0C-727D-4F1B-A3C6-5068408660D2}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_chorus01_S2_CrazyBass_144bpm_4-4" ID="{5BD44202-AA58-4D14-B387-E867E9E62BFD}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_chorus01_SYNTHS_144bpm_4-4" ID="{2DF428A3-63B5-4D05-AF3E-BDCC83CC5ECB}" ShortID="360380518">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{949F17C2-15CB-45CF-BE28-1F5E25AB21F7}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_chorus01_SYNTHS_144bpm_4-4" ID="{197BBB58-3EC1-4664-8A3C-EBF3DC8FE5D6}">
+													<Language>SFX</Language>
+													<AudioFile>chorus01\ThrillOfTheGun_chorus01_SYNTHS_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="18536132"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{B3967FDC-568D-45F2-ADE0-A989B32712B4}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_chorus01_SYNTHS_144bpm_4-4" ID="{0C86847B-C9F1-4D28-83E6-C6C1D32C0684}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_chorus01_SYNTHS_144bpm_4-4" ID="{197BBB58-3EC1-4664-8A3C-EBF3DC8FE5D6}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{208B4785-01C9-44C9-A511-E3E240F8B57F}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{8C094EA3-4DDC-49DE-B62C-369F586D3BA8}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="40000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="" ID="{2B967503-9067-4D6F-B575-C1BE379298C7}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="26666.6666666667"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Special" ID="{141F3B5D-CED2-4AC4-A52E-069EBC6C267A}" ShortID="588460938">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{C3CE10C6-D3D4-43BC-96C2-CBDBA3408C09}" ShortID="231217045">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{1EEDEB57-5353-40E7-BA0F-94788904C636}" ShortID="361839358">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="bridge" ID="{7FCB568F-2702-4B22-A157-5A8FAB3506B8}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{03D1F6AA-C7DC-49FD-AF24-8DD17DE8AAD9}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{7D75774C-7F6E-498F-9BD3-78FD0B9AF06D}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="bridge" ID="{7FCB568F-2702-4B22-A157-5A8FAB3506B8}" ShortID="872777578">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="58000"/>
+										<Property Name="Tempo" Type="Real64" Value="144"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MUS" ID="{2CD44ED4-A221-4A8B-B540-9BA0F971F717}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="ThrillOfTheGun_bridge_ORCHESTRA_144bpm_4-4" ID="{F2361196-E4E0-4D4E-8E1B-D926D0CD98D6}" ShortID="904382539">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{04EC399C-5C08-41CE-B0A1-E508737F1F95}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_bridge_ORCHESTRA_144bpm_4-4" ID="{FA45911B-1065-40A2-851C-389EF2EB4278}">
+													<Language>SFX</Language>
+													<AudioFile>bridge\ThrillOfTheGun_bridge_ORCHESTRA_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="114473070"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{CC194C61-45C2-42B9-BEF3-B7BD20F355AC}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_bridge_ORCHESTRA_144bpm_4-4" ID="{77B78542-2552-4927-AB20-41F57B3ED3C6}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="53333.3333333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_bridge_ORCHESTRA_144bpm_4-4" ID="{FA45911B-1065-40A2-851C-389EF2EB4278}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_bridge_PERCUSSION_144bpm_4-4" ID="{3B4387CA-EEFE-43D8-9D4C-D20289A0B488}" ShortID="170735213">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{5D4022D1-C3BB-4499-A198-FC722E2BDE14}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_bridge_PERCUSSION_144bpm_4-4" ID="{995E8A30-84ED-4640-8BBD-93ABE285A98C}">
+													<Language>SFX</Language>
+													<AudioFile>bridge\ThrillOfTheGun_bridge_PERCUSSION_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="241924347"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{7642CE12-F751-401C-ADB8-C8EE717A2228}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_bridge_PERCUSSION_144bpm_4-4" ID="{D0F62C9B-9396-4506-9480-BB487270FE3E}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="53333.3333333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_bridge_PERCUSSION_144bpm_4-4" ID="{995E8A30-84ED-4640-8BBD-93ABE285A98C}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4" ID="{FDE3C548-7658-4FE7-9529-2198A5125F37}" ShortID="909580924">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{1536952D-E6D5-4B34-ABCD-BD63D0B385D3}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4" ID="{649AB78C-8431-4295-B769-C5C15DA4F723}">
+													<Language>SFX</Language>
+													<AudioFile>bridge\ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1056886133"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{459BE1D9-9FA7-4FDC-BAC0-F7A4F3F1B352}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4" ID="{45542CB4-7419-4C8B-8B1E-DC10F85C77D6}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="50000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4" ID="{649AB78C-8431-4295-B769-C5C15DA4F723}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{D597D7D8-FED5-4ED4-8D5E-DE3F100DD91F}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>50</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{FDB168F2-7D77-49E4-878F-58DDA5ADE9E3}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>50</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{B78C342E-D04F-4558-9626-4E654487C4F0}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>50</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_bridge_S2_Bass_144bpm_4-4" ID="{719F54A7-C24B-48A2-A446-C4A07F2CF707}" ShortID="185791309">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{8CBADDF5-E547-4DEE-824F-EBA536945B2D}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_bridge_S2_Bass_144bpm_4-4" ID="{3A40D7F0-3412-4733-A8F9-540587C03D04}">
+													<Language>SFX</Language>
+													<AudioFile>bridge\ThrillOfTheGun_bridge_S2_Bass_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="969002074"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{9F0282C4-95FD-4059-B7C3-F0707EA3C984}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_bridge_S2_Bass_144bpm_4-4" ID="{1C04A53C-8147-4278-B49C-31A6FB6368B5}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="53333.3333333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_bridge_S2_Bass_144bpm_4-4" ID="{3A40D7F0-3412-4733-A8F9-540587C03D04}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_bridge_S2_CrazyBass_144bpm_4-4" ID="{204F8157-947C-43EC-AB8D-DDEB2D536CA7}" ShortID="737737331">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{3DF79057-E994-48CE-8D76-D75D2C1BF43A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_bridge_S2_CrazyBass_144bpm_4-4" ID="{A038B558-F560-4399-9F23-73CA5CFC27B6}">
+													<Language>SFX</Language>
+													<AudioFile>bridge\ThrillOfTheGun_bridge_S2_CrazyBass_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="563331883"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8A2B3055-238F-4FD7-B50E-ACA9FE01DE6A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_bridge_S2_CrazyBass_144bpm_4-4" ID="{67102000-C92E-4300-B664-81C5CA663E75}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="53333.3333333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_bridge_S2_CrazyBass_144bpm_4-4" ID="{A038B558-F560-4399-9F23-73CA5CFC27B6}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="ThrillOfTheGun_bridge_SYNTHS_144bpm_4-4" ID="{42BE15A5-270D-40FA-B721-A384E6D033CD}" ShortID="431484471">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{A6C91F23-D0BA-43BE-8863-E1E1AC7DF43F}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ThrillOfTheGun_bridge_SYNTHS_144bpm_4-4" ID="{0118C6D4-B6CD-4F99-A170-922CFA9AFD8F}">
+													<Language>SFX</Language>
+													<AudioFile>bridge\ThrillOfTheGun_bridge_SYNTHS_144bpm_4-4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="589466004"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8D432648-4AED-4607-A1E6-A60B72069C30}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="ThrillOfTheGun_bridge_SYNTHS_144bpm_4-4" ID="{20F567F1-7E05-4241-999E-1B1B2BE4F164}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="53333.3333333333"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="ThrillOfTheGun_bridge_SYNTHS_144bpm_4-4" ID="{0118C6D4-B6CD-4F99-A170-922CFA9AFD8F}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{95841A9C-0638-479B-8B62-0FA78C724B61}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{0759E64C-686E-41FD-8689-5DEC72945BBC}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="53333.3333333333"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="" ID="{1A4549F8-6035-47D9-A4A7-3B7E76AC7C06}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="2"/>
+															<Property Name="TimeMs" Type="Real64" Value="26666.6666666667"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicSegment Name="fill_01" ID="{9EE311C9-49F0-4389-B92A-A1DF08B57867}" ShortID="201294175">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="4333.02560315121"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="New Music Track" ID="{51EE6D54-07B0-4126-BAC5-749124B7F4AC}" ShortID="30862267">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{5049E39D-D729-4110-A84F-6141C07FA1FC}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4" ID="{B8231C9F-3DCC-4BF7-8A3B-6F9D03FEC379}">
+											<Language>SFX</Language>
+											<AudioFile>prechorus\ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="105354765"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F53C2BA6-81AE-4C77-A1BC-3ADA9F7203E7}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4" ID="{2B9879EA-D44C-41A1-8369-385BFF2D8F21}">
+																			<PropertyList>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="37708.3333333335"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="-37708.3333333335"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4" ID="{B8231C9F-3DCC-4BF7-8A3B-6F9D03FEC379}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{C140A0BA-5C96-46F1-B9E3-A7B79211FF2F}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>37.70833</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>40</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{CA256E01-4646-41C4-A6BA-A7E4FFED8E03}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>37.70833</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>40</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{10DCB258-1C3B-4B84-85AB-06B1DB73AE64}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>37.70833</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>40</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="New Music Track_03" ID="{C7478A83-7C1A-4E57-B028-8ECDAA3C8DA6}" ShortID="786654244">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{A090E1D4-1988-4E46-BF0B-B5E4A7FB4B28}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4" ID="{E37BF8A0-E768-4CAE-9272-2D28B5977405}">
+											<Language>SFX</Language>
+											<AudioFile>prechorus\ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="644145168"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{9DF1DB36-58A9-4FC0-9C97-FBB3CFADA3D4}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4" ID="{43C9CA9C-D174-4E0A-B7BD-ADD73AD75899}">
+																			<PropertyList>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="37708.3333333335"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																				<Property Name="FadeInDuration" Type="Real64" Value="1459.37961595273"/>
+																				<Property Name="FadeInShape" Type="int16" Value="7"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="-37708.3333333335"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="ThrillOfTheGun_prechorus_S2_CrazyBass_144bpm_4-4" ID="{E37BF8A0-E768-4CAE-9272-2D28B5977405}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{2F26D723-7256-4612-B12E-6ADD3CE70E7A}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>37.70833</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>40</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{11466D35-BAA6-445B-A785-837D84361C9B}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>37.70833</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>40</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{BD3FFE69-9FEE-4534-BC2F-5E9D12B205A5}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>37.70833</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>40</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{22D99375-B3ED-421A-93A3-3613E1C210D3}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="2291.66666666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{837E1B99-FB44-4D1D-9325-69446F000129}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="2291.66666666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="fill_02" ID="{A6CEFBE2-ACC6-4AF1-A36B-5BBB060A9EF2}" ShortID="594320500">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="New Music Track" ID="{30A8C83B-7BEE-47B8-BEB3-EEC07010404F}" ShortID="897189363">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{C5BDA5ED-6759-4906-A769-C9EB2EF8ECAD}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{C7C98D1E-865E-476F-833A-2E2C68B86BF4}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="New Music Track_02" ID="{9957C148-1222-42B8-9696-D00E8A2BABA2}" ShortID="307087648">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MUS" ID="{2CD44ED4-A221-4A8B-B540-9BA0F971F717}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{559C8C42-5480-4CE9-AA11-BCDFCD428579}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4" ID="{919208A5-26B4-4B79-B056-71925014BAF1}">
+											<Language>SFX</Language>
+											<AudioFile>chorus02\ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="972471192"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4" ID="{6A540A74-E01A-4F5B-8898-925A5A6B0E1E}">
+											<Language>SFX</Language>
+											<AudioFile>prechorus\ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="105354765"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{E7A394E0-50DC-4F0B-BD92-C4FBF82DA641}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4" ID="{A97D1BC3-DA95-49B4-8EDD-EFDDFE577344}">
+																			<PropertyList>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="38333.3333333333"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="-38333.3333333333"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="ThrillOfTheGun_chorus02_RISERIMPACTS_144bpm_4-4" ID="{919208A5-26B4-4B79-B056-71925014BAF1}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+																<Reference>
+																	<Local>
+																		<MusicClip Name="ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4" ID="{81D7B2FC-A9B4-4D95-B3E4-580E7FB8AC89}">
+																			<PropertyList>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="38333.3333333337"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="40000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="-38333.3333333337"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="ThrillOfTheGun_prechorus_RISERIMPACTS_144bpm_4-4" ID="{6A540A74-E01A-4F5B-8898-925A5A6B0E1E}"/>
+																			<PropertyCurveList>
+																				<PropertyCurve PropertyName="Highpass">
+																					<Curve Name="" ID="{D39D709B-D948-4A36-BDCA-AB4D5189863F}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>38.33333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>40</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Lowpass">
+																					<Curve Name="" ID="{344098E0-BEC5-43FF-BD31-13A1C9F29B14}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>38.33333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>40</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																				<PropertyCurve PropertyName="Volume">
+																					<Curve Name="" ID="{B0124CCB-BD18-4692-B2B2-7355A09C8B66}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>38.33333</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>40</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</PropertyCurve>
+																			</PropertyCurveList>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{75423564-46D3-4DCD-8605-E610E993E640}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="1666.66666666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{A2874481-2080-405E-87C8-23F68686E696}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="1666.66666666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="fill_03" ID="{D927D600-1F0A-4645-8028-4BCE64A1366E}" ShortID="979612894">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{8A8515DB-A537-4A2C-9C56-CDEDBB3B6A4B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="New Music Track" ID="{FEC415F9-56F5-4675-8191-55AFA3747819}" ShortID="954030023">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{B6BBE62B-CFB3-407D-91D5-A082CA2F6662}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{3922FE05-2B58-4FB2-9E6B-2D14D4E92979}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="New Music Track_01" ID="{5C3B1821-121E-4F41-B4AB-18C11D2F8938}" ShortID="433830149">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{F3171150-76CD-4D1E-8355-CD20AEAA7D9D}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F9082B65-77DE-48EC-98C4-5ABC938D559B}"/>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="New Music Track_02" ID="{993A1358-3E3F-4C08-BA48-8A1C820A3435}" ShortID="941250828">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2B207C68-ED44-412B-9F41-D432F174B3D0}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{18490100-DEB4-4D8B-88AB-3DABC35D764F}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4" ID="{4B073A4D-0644-4F68-95CB-B471DD0F96C4}">
+											<Language>SFX</Language>
+											<AudioFile>bridge\ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1056886133"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5A0AAF93-4064-445D-AD28-9A5C117CDFB1}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4" ID="{7DE9931B-A0B6-4D3D-A3DA-EFABD15231F7}">
+																			<PropertyList>
+																				<Property Name="BeginTrimOffset" Type="Real64" Value="50000"/>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="53333.3333333333"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																				<Property Name="PlayAt" Type="Real64" Value="-50000"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="ThrillOfTheGun_bridge_RISERIMPACTS_144bpm_4-4" ID="{4B073A4D-0644-4F68-95CB-B471DD0F96C4}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{C2614C86-A59C-472C-89FA-8F14BFCB6FFD}">
+												<PropertyList>
+													<Property Name="TimeMs" Type="Real64" Value="3333.33333333333"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{2522EE36-392E-4743-96A1-3AA802933B13}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="3333.33333333333"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="GAME_FSM" ID="{95614F8C-3E31-4100-9328-71C1B15797D5}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+							</Reference>
+							<Reference>
+								<ObjectRef Name="GAME_STATE" ID="{63000463-79EB-4BAB-9092-238C5B035F1C}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{8DF447AD-FE28-406C-BB1E-346D70B747C2}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="MainMenu" ID="{EFCA7BD3-F597-450F-AC09-93EF017B09B4}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Title" ID="{26DE0C7F-65D3-43A3-9DB7-3E1377158006}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="GAME_STATE" ID="{63000463-79EB-4BAB-9092-238C5B035F1C}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{F419B701-0AD6-480B-A5D4-04BBFD65E6D4}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Gameplay" ID="{25A887AF-CF39-40BF-849B-2489B0DF9AFF}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Game" ID="{9A0AC514-BB41-4503-9C60-CBCB8FFB3D4D}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Normal" ID="{E8B4C2F3-A44E-4E4D-B773-5D311ABA825D}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{9489AC21-D2BB-4DB9-A785-1ACAD339826E}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Special" ID="{141F3B5D-CED2-4AC4-A52E-069EBC6C267A}" WorkUnitID="{79FD5DEF-54FA-4C26-8F80-F11D15BD5B95}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Game" ID="{9A0AC514-BB41-4503-9C60-CBCB8FFB3D4D}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+												</Reference>
+												<Reference>
+													<ObjectRef Name="Special" ID="{78DFD81B-962F-46BB-98D2-80714E8CF36A}" WorkUnitID="{57B7763E-CF32-4E9F-A047-685F809650A7}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{4809EA0C-FCBD-4842-BBF2-C000CDE84ACA}" ShortID="228201163">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="PlaybackSpeed"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Music_PlayRate" ID="{BE7712C7-6873-496D-9310-D3584FCB9007}" WorkUnitID="{8E662C40-AEDF-453A-8708-70027150F959}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{E3652CBF-FE4A-4DFB-9E63-BE18E287025E}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0.25</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>25</XPos>
+																<YPos>0.25</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>1</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

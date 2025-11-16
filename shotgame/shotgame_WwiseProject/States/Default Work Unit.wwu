@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{57B7763E-CF32-4E9F-A047-685F809650A7}" SchemaVersion="123">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{57B7763E-CF32-4E9F-A047-685F809650A7}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="GAME_FSM" ID="{95614F8C-3E31-4100-9328-71C1B15797D5}">
+					<ChildrenList>
+						<State Name="None" ID="{A71D3D95-307F-4E25-9740-ABDA30C1A9C8}"/>
+						<State Name="Title" ID="{26DE0C7F-65D3-43A3-9DB7-3E1377158006}"/>
+						<State Name="Game" ID="{9A0AC514-BB41-4503-9C60-CBCB8FFB3D4D}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="GAME_STATE" ID="{63000463-79EB-4BAB-9092-238C5B035F1C}">
+					<ChildrenList>
+						<State Name="None" ID="{9EF54BA2-028F-41E1-8745-F1E73ED63BCB}"/>
+						<State Name="Normal" ID="{E8B4C2F3-A44E-4E4D-B773-5D311ABA825D}"/>
+						<State Name="Special" ID="{78DFD81B-962F-46BB-98D2-80714E8CF36A}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
