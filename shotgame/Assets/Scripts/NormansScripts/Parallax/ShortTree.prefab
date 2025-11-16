@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4921942441579106346}
   - component: {fileID: 4576439773330442658}
   - component: {fileID: 2821524727888685445}
+  - component: {fileID: 6066985950746426968}
   m_Layer: 0
   m_Name: ShortTree
   m_TagString: Untagged
@@ -98,3 +99,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  isMoving: 1
+--- !u!114 &6066985950746426968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27472694374459849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827b1f540d60d874285668a8fc771bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  duration: 5

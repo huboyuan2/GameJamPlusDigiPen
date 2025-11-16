@@ -44,24 +44,49 @@
       <change beforePath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleUtils.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DOTween/Modules/DOTweenModuleUtils.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/DOTween/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DOTween/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/DOTween/readme.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DOTween/readme.txt.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gaurdrail.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gaurdrail.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LargePit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LargePit.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/SmallPitfall 1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/SmallPitfall 1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/SmallPitfall 1.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/SmallPitfall 1.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/SmallPitfall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/SmallPitfall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/SmallPitfall.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/SmallPitfall.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MedPit.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MedPit.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Canvas.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LargePit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LargePit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/LargePit.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/LargePit.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MedPit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MedPit.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/MedPit.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/MedPit.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacle.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obstacle.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obstacle.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pitfall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pitfall.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pitfall.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pitfall.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RoadBlock.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RoadBlock.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SmallPitfall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SmallPitfall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SmallPitfall.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SmallPitfall.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Square.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Square.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Square.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Square.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StreetFinal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StreetFinal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StreetFinal.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StreetFinal.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/bullet1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/bullet1.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/bullet1.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/bullet1.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/bullet2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/bullet2.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/bullet2.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/bullet2.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/bulletIcon.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/bulletIcon.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/bulletIcon.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/bulletIcon.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/largePothole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/largePothole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/largePothole.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/largePothole.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/medPothole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/medPothole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/medPothole.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/medPothole.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/pothole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/pothole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/pothole.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/pothole.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/rdBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/rdBlock.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/rdBlock.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/rdBlock.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/sudoEnemy.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/sudoEnemy.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MeTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MeTest.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MeTest.unity.meta" afterDir="false" />
@@ -77,15 +102,24 @@
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletUI.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CamController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CamController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CamController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CamController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DummyEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DummyEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DummyEnemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DummyEnemy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemySpawner.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Environment.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Environment.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/Health.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/HealthBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/HighScore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/HighScore.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/MouseUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/MouseUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/ParallaxObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/ParallaxObject.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/ParallaxSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/ParallaxSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NormansScripts/UIManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings.meta" afterDir="false" />
@@ -98,6 +132,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/Settings/Scenes/URP2DSceneTemplate.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Scenes/URP2DSceneTemplate.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SmallPitfall.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SmallPitfall.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreetFinal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreetFinal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Sprites/EmojiOne.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
@@ -119,6 +157,7 @@
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TimeManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/URPProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
@@ -126,6 +165,7 @@
       <change beforePath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VersionControlSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,9 +177,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NormansScripts/DeadTimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NormansScripts/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NormansScripts/MouseUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NormansScripts/ParallaxSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NormansScripts/Test.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -227,7 +269,8 @@
       <option name="presentableId" value="Default" />
       <updated>1763189772173</updated>
       <workItem from="1763189772174" duration="2071000" />
-      <workItem from="1763250685953" duration="7475000" />
+      <workItem from="1763250685953" duration="19887000" />
+      <workItem from="1763284826564" duration="5292000" />
     </task>
     <servers />
   </component>

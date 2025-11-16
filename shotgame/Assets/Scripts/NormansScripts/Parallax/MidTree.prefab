@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1172647762223053923}
   - component: {fileID: 5918118785132257035}
   - component: {fileID: 6241527637189818309}
+  - component: {fileID: 1361820188857149279}
   m_Layer: 0
   m_Name: MidTree
   m_TagString: Untagged
@@ -98,3 +99,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  isMoving: 1
+--- !u!114 &1361820188857149279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5443473030723018268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827b1f540d60d874285668a8fc771bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  duration: 5

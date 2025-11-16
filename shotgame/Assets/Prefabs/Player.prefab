@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1308946633
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2792173d76a5f4d2ebe800b6b4b096cf, type: 3}
   m_Color: {r: 0.48427665, g: 0.3662532, b: 0.23300098, a: 1}
@@ -270,8 +270,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1308946633
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 16292f0e16bf97545b5865b067446c22, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -460,8 +460,8 @@ MonoBehaviour:
   jumpKey: 32
   isJumping: 0
   bulletPrefabs:
-  - {fileID: 4405380878580714090, guid: a4f765e4abc5d8242ae735f9262c9b2a, type: 3}
   - {fileID: 4405380878580714090, guid: 96f183c39f9bf8d43848f379989a940d, type: 3}
+  - {fileID: 4405380878580714090, guid: a4f765e4abc5d8242ae735f9262c9b2a, type: 3}
   bulletCounts: 0a0000000a000000
   bulletSpeed: 10
   gunindex: 0
@@ -599,8 +599,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1308946633
+  m_SortingLayer: 1
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 0b5bb49a029854747aa80ec121849593, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -684,8 +684,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1308946633
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f9f83314d4115ef408eaccc795a4b674, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
