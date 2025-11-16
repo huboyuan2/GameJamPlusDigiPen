@@ -198,6 +198,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 261261969685109274, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 956309573510014325, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -256,11 +260,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4891542291998214698, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4891542291998214698, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5251382054286268290, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMax.y
@@ -314,6 +318,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6772949029280309261, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7443189831847375248, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
+      propertyPath: playButton
+      value: 
+      objectReference: {fileID: 497420092}
     - target: {fileID: 8035702213210700538, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -461,6 +473,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletIcon: {fileID: 4633530341824052041, guid: 6dd76b6e78e666f49aa417c99048fb95, type: 3}
   bulletContainer: {fileID: 497420090}
+--- !u!1 &497420092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 261261969685109274, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
+  m_PrefabInstance: {fileID: 497420089}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &524549034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,6 +1060,8 @@ MonoBehaviour:
   scrollSpeed: 100
   roadPrefab: {fileID: 4435869152660240568, guid: 9269c2cc1640fd24aa63ed416b0e40b8, type: 3}
   pitfallPrefab: {fileID: 215821583256047414, guid: 54c33f00100236746adada0754bf0201, type: 3}
+  pitfall2Prefab: {fileID: 0}
+  pitfall3Prefab: {fileID: 0}
   obstaclePrefab: {fileID: 8716367297084761792, guid: 6198ad4534461f94ea0de6ada6bef7b5, type: 3}
   lanePitfallDistances: 
 --- !u!1 &1419352801
