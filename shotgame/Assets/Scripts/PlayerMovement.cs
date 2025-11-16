@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     public bool useScreenBounds = false; // Auto calculate from screen
     public Vector2 minBounds = new Vector2(-10f, -10f);
     public Vector2 maxBounds = new Vector2(10f, 10f);
+    [Range(0.1f, 1f)]
+    public float screenRatio = 0.333f;
 
     [Header("Fake Jump Settings")]
     public Transform visualTransform; // Assign sprite child object here
@@ -309,17 +311,23 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
+        // Clamp screen ratio to valid range
+        float clampedRatio = Mathf.Clamp(screenRatio, 0.1f, 1f);
+
         // Get screen corners in world space at the specified Z distance
         Vector3 bottomLeft = cam.ViewportToWorldPoint(new Vector3(0, 0, zDistance));
         Vector3 bottomRight = cam.ViewportToWorldPoint(new Vector3(1, 0, zDistance));
-        Vector3 screenCenter = cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, zDistance));
 
-        // Set boundaries to lower half of screen
-        minBounds.x = -4f;//bottomLeft.x;
-        maxBounds.x = 3.3f; //bottomRight.x;
-        minBounds.y = -2.2f;// bottomLeft.y;
-        maxBounds.y = 0.25f;// screenCenter.y; // Use screen center as top boundary (lower half)
+        // Calculate the top boundary based on screen ratio
+        // screenRatio = 0.333 means lower 1/3 of screen
+        Vector3 topBoundary = cam.ViewportToWorldPoint(new Vector3(0.5f, clampedRatio, zDistance));
 
-        Debug.Log($"Screen bounds calculated (Camera: {(cam.orthographic ? "Orthographic" : "Perspective")}, Z Distance: {zDistance:F2}): Min({minBounds.x:F2}, {minBounds.y:F2}), Max({maxBounds.x:F2}, {maxBounds.y:F2})");
+        // Set boundaries
+        minBounds.x = bottomLeft.x;
+        maxBounds.x = bottomRight.x;
+        minBounds.y = bottomLeft.y;
+        maxBounds.y = topBoundary.y; // Use calculated ratio boundary
+
+        Debug.Log($"Screen bounds calculated (Camera: {(cam.orthographic ? "Orthographic" : "Perspective")}, Z Distance: {zDistance:F2}, Screen Ratio: {clampedRatio:F2}): Min({minBounds.x:F2}, {minBounds.y:F2}), Max({maxBounds.x:F2}, {maxBounds.y:F2})");
     }
 }
