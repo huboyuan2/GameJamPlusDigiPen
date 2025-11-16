@@ -13,6 +13,8 @@ public class Environment : MonoBehaviour
     public float scrollSpeed = 100f;
     public GameObject roadPrefab;
     public GameObject pitfallPrefab;
+    public GameObject pitfall2Prefab;
+    public GameObject pitfall3Prefab;
     public GameObject obstaclePrefab;
     public LinkedList<float>[] mapData;
     public int[] lanePitfallDistances;
@@ -20,6 +22,10 @@ public class Environment : MonoBehaviour
     void Start()
     {
         lanePitfallDistances = new int[numLanes];
+        for (int i = 0; i < numLanes; i++)
+        {
+            lanePitfallDistances[i] = 0;
+        }
         mapData = new LinkedList<float>[numLanes];
         for (int i = 0; i < numLanes; i++)
         {
@@ -29,7 +35,7 @@ public class Environment : MonoBehaviour
             {
                 b[j] = (Random.Range(0, 10));
                 GameObject a;//= Instantiate(roadPrefab);
-                if (b[j] < 1.45)
+                if (b[j] < 1.45) // pitfall
                 {
                     if (lanePitfallDistances[i] >= maxPitfallDistance)
                     {
@@ -42,19 +48,19 @@ public class Environment : MonoBehaviour
                         lanePitfallDistances[i]++;
                     }
                 }
-                else if (b[j] < 2.0)
+                else if (b[j] < 2.0)// dumpster fire
                 {
                     a = Instantiate(obstaclePrefab);
                     lanePitfallDistances[i]++;
                 }
-                else
+                else // regular road tile
                 {
                     a = Instantiate(roadPrefab);
                 }
                 Vector3 sc = transform.localScale;
-                a.transform.position = new Vector3(j * sc.x, i * sc.y, 0 * sc.z - 0.7071f * transform.localScale.z * (numLanes - i)) + transform.position;
-                a.transform.localScale = transform.localScale;
-                a.transform.localScale = new Vector3(a.transform.localScale.x, a.transform.localScale.y, 0);
+                a.transform.position = new Vector3(j * sc.x, i * sc.y, - 0.7071f * transform.localScale.z * (numLanes - i)) + transform.position;
+                a.transform.localScale = new Vector3(1,1,1);
+                //a.transform.localScale = new Vector3(a.transform.localScale.x, a.transform.localScale.y, 0);
                 a.transform.SetParent(transform);
 
             }
