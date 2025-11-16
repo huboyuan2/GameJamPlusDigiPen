@@ -26,11 +26,24 @@ public class Enemy : MonoBehaviour
     public float bulletSpeed = 10f;                  // Enemy bullet speed
     public float predictionMultiplier = 0.5f;        // How much to lead the target
     
-
+    [Header("State")]
+    private bool isPlayerDead = false;               // Track if player is dead
     
     private Transform player;
     private float fireTimer = 0f;
     private EnemySpawner spawner;
+    
+    void OnEnable()
+    {
+        // Subscribe to player death event
+        Health.PlayerDead += OnPlayerDead;
+    }
+
+    void OnDisable()
+    {
+        // Unsubscribe from player death event
+        Health.PlayerDead -= OnPlayerDead;
+    }
     
     void Start()
     {
@@ -67,11 +80,11 @@ public class Enemy : MonoBehaviour
         // Update speed based on Y position
         globalSpeed = CalculateGlobalSpeed();
 
-        // Apply movement (assuming moving left)
+        // Apply movement (always continue moving left, even after player death)
         transform.position += Vector3.left * globalSpeed * Time.deltaTime;
         
-        // Shooting logic
-        if (canShoot && player != null && enemyBullet != null)
+        // Shooting logic (only if player is alive)
+        if (!isPlayerDead && canShoot && player != null && enemyBullet != null)
         {
             fireTimer -= Time.deltaTime;
             
@@ -82,9 +95,24 @@ public class Enemy : MonoBehaviour
             }
         }
         
+        // Check if out of bounds
         if (IsOutOfBounds())
         {
-            TelePort();
+            // Only teleport if player is alive
+            if (!isPlayerDead)
+            {
+                TelePort();
+            }
+            else
+            {
+                // If player is dead, just destroy the enemy
+                if (EnemySpawner.Instance != null)
+                {
+                    EnemySpawner.Instance.activeEnemies.Remove(this.gameObject);
+                }
+                Destroy(gameObject);
+                Debug.Log("[Enemy] Scrolled off screen after player death, destroying.");
+            }
         }
     }
 
@@ -117,9 +145,10 @@ public class Enemy : MonoBehaviour
     
     void Shoot()
     {
-        
         if (player == null || enemyBullet == null) return;
+        
         Debug.Log("[Enemy] Shooting at player...");
+        
         // Calculate shoot direction
         Vector2 shootDirection;
         
@@ -191,8 +220,25 @@ public class Enemy : MonoBehaviour
     
     #endregion
     
+    #region Player Death Handling
+    
+    void OnPlayerDead()
+    {
+        if (isPlayerDead) return; // Prevent multiple calls
+        isPlayerDead = true;
+        
+        Debug.Log("[Enemy] Player died! Enemy will continue moving but stop shooting.");
+        
+        // Enemy will continue moving in Update(), but shooting is now disabled
+    }
+    
+    #endregion
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Don't process collisions if player is dead
+        if (isPlayerDead) return;
+        
         // Use switch pattern for cleaner code
         switch (collision.tag)
         {
@@ -252,7 +298,7 @@ public class Enemy : MonoBehaviour
     {
         health -= damage;
         Debug.Log($"Enemy took {damage} damage. Health: {health}/{maxHealth}");
-      
+
         if (health <= 0)
         {
             Die();
@@ -262,13 +308,13 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy died!");
-
+        HighScore.instance.AddScore();
         // Remove from active list first (before any destruction)
         if (EnemySpawner.Instance != null)
         {
             EnemySpawner.Instance.activeEnemies.Remove(this.gameObject);
         }
-      
+
         // Handle death animation/destruction
         if (dummyEnemy != null)
         {

@@ -15,16 +15,44 @@ public class HealthBar : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
+
+        // Ensure slider is configured correctly
+        if (_hpBar != null)
+        {
+            _hpBar.minValue = 0f;
+            _hpBar.maxValue = 1f; // Normalized range (0-1)
+            _hpBar.value = 1f;    // Start at full health
+        }
     }
     
     void LateUpdate()
     {
-        Vector3 screenPos = cam.WorldToScreenPoint(player.position + offset);
-        transform.position = screenPos;
+        if (player != null && cam != null)
+        {
+            Vector3 screenPos = cam.WorldToScreenPoint(player.position + offset);
+            transform.position = screenPos;
+        }
     }
 
-    public void SetHealthBar(float health)
+    // Initialize health bar with maxHp (called from Health.Start())
+    public void Initialize(float maxHp)
     {
-        _hpBar.value = health;
+        if (_hpBar != null)
+        {
+            _hpBar.minValue = 0f;
+            _hpBar.maxValue = 1f; // Use normalized range
+            _hpBar.value = 1f;    // Start at full
+        }
+
+        Debug.Log($"[HealthBar] Initialized with max HP: {maxHp}");
+    }
+
+    // Set health bar value (expects normalized value 0-1)
+    public void SetHealthBar(float normalizedHealth)
+    {
+        if (_hpBar != null)
+        {
+            _hpBar.value = Mathf.Clamp01(normalizedHealth); // Ensure 0-1 range
+        }
     }
 }
