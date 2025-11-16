@@ -27,6 +27,12 @@ public class SoundMgr : MonoBehaviour
         }
     }
 
+    public List<AudioClip> soundClips;
+    
+    [Header("Background Music")]
+    private AudioSource bgmAudioSource;
+    private bool isBGMPlaying = false;
+
     private void Awake()
     {
         // Enforce singleton pattern
@@ -39,9 +45,92 @@ public class SoundMgr : MonoBehaviour
 
         _instance = this;
         DontDestroyOnLoad(gameObject);
+        
+        // Create AudioSource for background music
+        bgmAudioSource = gameObject.AddComponent<AudioSource>();
+        bgmAudioSource.loop = true;
+        bgmAudioSource.playOnAwake = false;
     }
 
-    public List<AudioClip> soundClips;
+    void OnEnable()
+    {
+        // Subscribe to game start event
+        UIManager.GameStart += OnGameStart;
+        
+        // Subscribe to player death event
+        Health.PlayerDead += OnPlayerDead;
+    }
+
+    void OnDisable()
+    {
+        // Unsubscribe from game start event
+        UIManager.GameStart -= OnGameStart;
+        
+        // Unsubscribe from player death event
+        Health.PlayerDead -= OnPlayerDead;
+    }
+
+    void OnGameStart()
+    {
+        if (isBGMPlaying) return; // Prevent playing multiple times
+        
+        PlayBackgroundMusic();
+    }
+
+    void OnPlayerDead()
+    {
+        Debug.Log("[SoundMgr] Player died! Stopping background music.");
+        StopBackgroundMusic();
+    }
+
+    public void PlayBackgroundMusic()
+    {
+        if (soundClips == null || soundClips.Count == 0)
+        {
+            Debug.LogWarning("[SoundMgr] No sound clips assigned! Cannot play background music.");
+            return;
+        }
+
+        AudioClip bgmClip = soundClips[0];
+        
+        if (bgmClip == null)
+        {
+            Debug.LogWarning("[SoundMgr] First sound clip (background music) is null!");
+            return;
+        }
+
+        if (bgmAudioSource == null)
+        {
+            Debug.LogError("[SoundMgr] Background music AudioSource is null!");
+            return;
+        }
+
+        bgmAudioSource.clip = bgmClip;
+        bgmAudioSource.loop = true;
+        bgmAudioSource.Play();
+        isBGMPlaying = true;
+
+        Debug.Log($"[SoundMgr] Playing background music: {bgmClip.name}");
+    }
+
+    public void StopBackgroundMusic()
+    {
+        if (bgmAudioSource != null && bgmAudioSource.isPlaying)
+        {
+            bgmAudioSource.Stop();
+            isBGMPlaying = false;
+            Debug.Log("[SoundMgr] Stopped background music.");
+        }
+    }
+
+    public void SetBGMVolume(float volume)
+    {
+        if (bgmAudioSource != null)
+        {
+            bgmAudioSource.volume = Mathf.Clamp01(volume);
+        }
+    }
+
     public void PlaySound(int soundIndex, Vector3 position)
     {
         if (soundIndex < 0 || soundIndex >= soundClips.Count)
@@ -59,15 +148,6 @@ public class SoundMgr : MonoBehaviour
             Debug.LogWarning($"Sound '{soundIndex}' not found in SoundMgr.");
         }
     }
-    //void Start()
-    //{
-
-    //}
-
-    //void Update()
-    //{
-
-    //}
 
     private void OnDestroy()
     {
