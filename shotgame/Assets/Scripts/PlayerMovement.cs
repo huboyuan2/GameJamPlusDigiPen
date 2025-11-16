@@ -42,9 +42,28 @@ public class PlayerMovement : MonoBehaviour
     [Header("Knockback Settings")]
     public float knockbackDecay = 5f; // How fast knockback decays
 
+    [Header("State")]
+    private bool isDead = false;
+
+    [Header("Death Settings")]
+    public float deathScrollSpeedMultiplier = 1.0f; // Multiplier for scroll speed when dead
+    private float deathScrollSpeed = 0f;
+
     // Event triggered when player shoots, passes gunindex
     public static Action<int> OnShoot;
 
+    void OnEnable()
+    {
+        // Subscribe to death event
+        Health.PlayerDead += OnPlayerDead;
+    }
+
+    void OnDisable()
+    {
+        // Unsubscribe from death event
+        Health.PlayerDead -= OnPlayerDead;
+    }
+    
     void Start()
     {
         BulletUI.Instance.BulletCount = bulletCounts[gunindex];
@@ -84,6 +103,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (isDead)
+        {
+            // Apply death scroll (move left off screen)
+            UpdateDeathScroll();
+            return;
+        }
+
         // WASD or arrow key input
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
@@ -193,6 +219,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isDead) return; // Don't process physics if dead
+
         // Combine movement input with knockback velocity
         Vector2 noYKnock = new Vector2(knockbackVelocity.x, 0);
         Vector2 targetVelocity = moveInput * moveSpeed + knockbackVelocity;
@@ -253,16 +281,112 @@ public class PlayerMovement : MonoBehaviour
         jumpTween = jumpSequence;
     }
 
+    #endregion
+
+    #region Death System
+
+    void OnPlayerDead()
+    {
+        if (isDead) return; // Prevent calling multiple times
+        isDead = true;
+
+        Debug.Log("[Player] Player died! Disabling controls and scrolling off screen...");
+
+        // 1. Don't calculate death scroll speed here - will be calculated per frame based on Y position
+
+        // 2. Disable rigidbody physics (but don't freeze completely)
+        if (rb != null)
+        {
+            rb.velocity = Vector2.zero;
+            rb.gravityScale = 0f;
+            // Don't set isKinematic - we'll move manually in Update
+        }
+
+        // 3. Stop all child animations
+        SimpleAnimController[] animControllers = GetComponentsInChildren<SimpleAnimController>();
+        foreach (var anim in animControllers)
+        {
+            if (anim != null)
+            {
+                anim.Stop();
+            }
+        }
+
+        // 4. Kill jump animation
+        if (jumpTween != null && jumpTween.IsActive())
+        {
+            jumpTween.Kill();
+        }
+
+        // 5. Disable collision
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null)
+        {
+            col.enabled = false;
+        }
+
+        // 6. Disable boundaries to allow scrolling off screen
+        useBoundaries = false;
+
+        Debug.Log("[Player] Player death initialized, will scroll off screen with Y-position-based speed.");
+    }
+
+    void UpdateDeathScroll()
+    {
+        // Calculate death scroll speed based on Y position (same as Enemy logic)
+        deathScrollSpeed = CalculateDeathScrollSpeed();
+
+        // Move player left off screen (same as Enemy movement)
+        transform.position += Vector3.left * deathScrollSpeed * Time.deltaTime;
+
+        // Optional: Destroy player after scrolling far off screen
+        if (transform.position.x < -20f)
+        {
+            Debug.Log("[Player] Scrolled off screen, ready for game over.");
+            // You can trigger game over screen here
+            // GameManager.Instance?.ShowGameOver();
+        }
+    }
+
+    float CalculateDeathScrollSpeed()
+    {
+        Environment env = FindObjectOfType<Environment>();
+        if (env == null)
+        {
+            return 5f; // Fallback default speed
+        }
+
+        // Base speed from environment
+        float baseSpeed = env.scrollSpeed * deathScrollSpeedMultiplier;
+
+        // Adjust speed based on Y position (same logic as Enemy.CalculateGlobalSpeed)
+        // Y position is referenced from a reference point (default 0)
+        float yOffset = transform.position.y - 0f; // Using 0 as reference, can make this configurable
+
+        // Y offset affects speed: higher Y = slower movement (appears further away)
+        float speedMultiplier = 1.0f - (yOffset * 0.1f); // Using 0.1f similar to Enemy's yPositionSpeedFactor
+        speedMultiplier = Mathf.Clamp(speedMultiplier, 0.3f, 1.5f); // Same clamp range as Enemy
+
+        float finalSpeed = baseSpeed * speedMultiplier;
+
+        return finalSpeed;
+    }
+
+    #endregion
+
     // Public method to trigger jump from other scripts
     public void Jump()
     {
-        if (!isJumping)
+        if (!isJumping && !isDead)
         {
             PerformJump();
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (isDead) return; // Don't process collisions if dead
+
         if (collision.CompareTag("EnemyBullet"))
         {
             // Handle bullet collision
@@ -274,10 +398,8 @@ public class PlayerMovement : MonoBehaviour
             }
             //collision.gameObject.SetActive(false);
             Destroy(collision.gameObject);
-
         }
     }
-    #endregion
 
     // Calculate boundaries from screen's lower half
     void CalculateScreenBounds()

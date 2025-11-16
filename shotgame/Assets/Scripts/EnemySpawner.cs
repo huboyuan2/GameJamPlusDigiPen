@@ -27,6 +27,9 @@ public class EnemySpawner : MonoBehaviour
     public List<Transform> spawnPoints;
     public List<GameObject> activeEnemies;
 
+    [Header("State")]
+    private bool isPlayerDead = false;
+
     void Awake()
     {
         // Singleton pattern
@@ -41,9 +44,23 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        // Subscribe to player death event
+        Health.PlayerDead += OnPlayerDead;
+    }
+
+    void OnDisable()
+    {
+        // Unsubscribe from player death event
+        Health.PlayerDead -= OnPlayerDead;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (isPlayerDead) return; // Stop spawning if player is dead
+
         if (activeEnemies.Count < 5)
         {
             SpawnEnemy();
@@ -52,6 +69,14 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
+        if (isPlayerDead) return; // Safety check
+
+        if (enemyTemplates.Count == 0 || spawnPoints.Count == 0)
+        {
+            Debug.LogWarning("[EnemySpawner] No enemy templates or spawn points assigned!");
+            return;
+        }
+
         // Choose a random enemy template and spawn point
         GameObject enemyPrefab = enemyTemplates[Random.Range(0, enemyTemplates.Count)];
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Count)];
@@ -63,9 +88,23 @@ public class EnemySpawner : MonoBehaviour
 
     public void TelePortEnemy(Enemy enemy)
     {
-        if (activeEnemies.Contains(enemy.gameObject))
+        if (isPlayerDead) return; // Don't teleport if player is dead
+
+        if (activeEnemies.Contains(enemy.gameObject) && spawnPoints.Count > 0)
         {
             enemy.transform.position = spawnPoints[Random.Range(0, spawnPoints.Count)].position;
         }
+    }
+
+    void OnPlayerDead()
+    {
+        if (isPlayerDead) return; // Prevent multiple calls
+        isPlayerDead = true;
+
+        Debug.Log("[EnemySpawner] Player died! Stopping enemy spawning. Enemies will continue moving but stop shooting.");
+        
+        // Note: We don't call StopAllEnemies() anymore
+        // Each Enemy script will handle player death themselves via Health.PlayerDead event
+        // Enemies will continue moving but stop shooting and teleporting
     }
 }

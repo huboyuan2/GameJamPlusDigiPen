@@ -8,6 +8,19 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject playButton;
     [SerializeField] private GameObject highScore;
     [SerializeField] private GameObject ScoreBoard;
+
+    void OnEnable()
+    {
+        // Subscribe to player death event
+        Health.PlayerDead += OnPlayerDeath;
+    }
+
+    void OnDisable()
+    {
+        // Unsubscribe from player death event
+        Health.PlayerDead -= OnPlayerDeath;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +31,13 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    // Called when player dies
+    private void OnPlayerDeath()
+    {
+        Debug.Log("[UIManager] Player death detected, calling GameEndPhase()");
+        GameEndPhase();
     }
     
     public void GameEndPhase()
