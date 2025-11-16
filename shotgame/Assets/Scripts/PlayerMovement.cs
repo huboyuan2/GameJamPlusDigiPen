@@ -263,10 +263,10 @@ public class PlayerMovement : MonoBehaviour
         Vector3 screenCenter = cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, cam.nearClipPlane));
 
         // Set boundaries to lower half of screen
-        minBounds.x = bottomLeft.x;
-        maxBounds.x = bottomRight.x;
-        minBounds.y = bottomLeft.y;
-        maxBounds.y = screenCenter.y; // Use screen center as top boundary (lower half)
+        minBounds.x = 4f;//bottomLeft.x;
+        maxBounds.x = 3.3f; //bottomRight.x;
+        minBounds.y = -2.2f;// bottomLeft.y;
+        maxBounds.y = 0.25f;// screenCenter.y; // Use screen center as top boundary (lower half)
 
         Debug.Log($"Screen bounds calculated: Min({minBounds.x}, {minBounds.y}), Max({maxBounds.x}, {maxBounds.y})");
     }

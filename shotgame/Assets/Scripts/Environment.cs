@@ -39,9 +39,10 @@ public class Environment : MonoBehaviour
                     a = Instantiate(roadPrefab);
                 }
                 Vector3 sc = transform.localScale;
-                a.transform.position = new Vector3(j * sc.x, i * sc.y, 0 * sc.z) + transform.position;
+                a.transform.position = new Vector3(j * sc.x, i * sc.y, 0 * sc.z - 0.7071f * transform.localScale.z * (numLanes - i)) + transform.position;
                 a.transform.localScale = transform.localScale;
-                a.transform.SetParent(transform, true);
+                a.transform.localScale = new Vector3(a.transform.localScale.x, a.transform.localScale.y, 0);
+                a.transform.SetParent(transform);
 
             }
             mapData[i] = new LinkedList<float>(b);
