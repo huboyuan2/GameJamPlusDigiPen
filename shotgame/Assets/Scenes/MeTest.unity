@@ -393,7 +393,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1071157286783856773, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1581245528175925779, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_IsActive
@@ -401,19 +401,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3166384536615138503, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3166384536615138503, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3166384536615138503, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3166384536615138503, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -70
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3830342987225073666, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: player
@@ -497,20 +497,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7263592809536301493, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7263592809536301493, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7263592809536301493, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 200
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7263592809536301493, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -20
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7443189831847375248, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1383584894}
     - target: {fileID: 7507506840416137114, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -1207,6 +1211,17 @@ MonoBehaviour:
   emptyPrefab: {fileID: 0}
   roadTex: {fileID: 0}
   lanePitfallDistances: 
+--- !u!114 &1383584894 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4892230578937027219, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
+  m_PrefabInstance: {fileID: 497420089}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1419352801
 GameObject:
   m_ObjectHideFlags: 0

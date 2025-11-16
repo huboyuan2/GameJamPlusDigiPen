@@ -308,7 +308,7 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         Debug.Log("Enemy died!");
-
+        HighScore.instance.AddScore();
         // Remove from active list first (before any destruction)
         if (EnemySpawner.Instance != null)
         {

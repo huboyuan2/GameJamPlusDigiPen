@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
+using TMPro;
+using UnityEditor.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameObject playButton;
     [SerializeField] private GameObject highScore;
     [SerializeField] private GameObject ScoreBoard;
+    [SerializeField] private TextMeshProUGUI scoreText;
 
+    private float scores = 0;
 
     public static Action GameStart;
     void OnEnable()
@@ -48,6 +52,7 @@ public class UIManager : MonoBehaviour
         playButton.SetActive(false);
         highScore.SetActive(false);
         ScoreBoard.SetActive(true);
+        scoreText.text = HighScore.instance.GetScore().ToString();
     }
     
     public void GameStartPhase()
