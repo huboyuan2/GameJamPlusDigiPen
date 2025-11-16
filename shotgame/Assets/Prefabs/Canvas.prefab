@@ -630,6 +630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playButton: {fileID: 261261969685109274}
   highScore: {fileID: 5169103363898029705}
+  ScoreBoard: {fileID: 1581245528175925779}
 --- !u!1 &3850375416389137676
 GameObject:
   m_ObjectHideFlags: 0
