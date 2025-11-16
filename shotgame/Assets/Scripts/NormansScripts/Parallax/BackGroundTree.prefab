@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2591618207565794651}
   - component: {fileID: 4827028988807534901}
   - component: {fileID: 9202091543463424313}
+  - component: {fileID: 3116698444292187407}
   m_Layer: 0
   m_Name: BackGroundTree
   m_TagString: Untagged
@@ -98,3 +99,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3.5
+  isMoving: 1
+--- !u!114 &3116698444292187407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6015084733703216967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 827b1f540d60d874285668a8fc771bcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 0
+  duration: 5
