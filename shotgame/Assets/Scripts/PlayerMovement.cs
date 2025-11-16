@@ -259,7 +259,22 @@ public class PlayerMovement : MonoBehaviour
             PerformJump();
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("EnemyBullet"))
+        {
+            // Handle bullet collision
+            Health bulletHealth = collision.GetComponent<Health>();
+            Bullet bullet = collision.GetComponent<Bullet>();
+            if (bullet != null && !bullet.isPlayerBullet)
+            {
+                health.TakeDamage(bullet.damage);
+            }
+            //collision.gameObject.SetActive(false);
+            Destroy(collision.gameObject);
 
+        }
+    }
     #endregion
 
     // Calculate boundaries from screen's lower half

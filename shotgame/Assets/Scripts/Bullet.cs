@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     public float oppositeForceStrength = 5f;
     public float enemyForceStrength = 2f;
     public int damage = 10;
+    public bool isPlayerBullet = true;
     Rigidbody2D rb;
     
     // Start is called before the first frame update
@@ -30,8 +31,8 @@ public class Bullet : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, angle);
     }
     // Update is called once per frame
-    void Update()
-    {
+    //void Update()
+    //{
         
-    }
+    //}
 }

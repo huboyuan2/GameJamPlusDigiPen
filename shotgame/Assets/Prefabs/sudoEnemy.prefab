@@ -256,6 +256,13 @@ MonoBehaviour:
   speedratio: 0.62
   yPositionSpeedFactor: 0.1
   referenceY: 0
+  enemyBullet: {fileID: 4405380878580714090, guid: 0a77b9598e9e65145a30aa04a4512b40, type: 3}
+  canShoot: 1
+  canPredictPlayer: 0
+  fireCooldown: 2
+  detectionRange: 150
+  bulletSpeed: 10
+  predictionMultiplier: 0.5
 --- !u!1 &5203996892518305971
 GameObject:
   m_ObjectHideFlags: 0
