@@ -199,7 +199,7 @@ public class PlayerMovement : MonoBehaviour
                             Debug.Log($"Knockback applied: {knockbackVelocity.magnitude}");
                         }
                     }
-
+                    SoundMgr.Instance.PlaySound(1,transform.position);
                     // Invoke shoot event
                     OnShoot?.Invoke(gunindex);
                 }
