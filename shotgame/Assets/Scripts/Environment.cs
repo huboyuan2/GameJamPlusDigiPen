@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Environment : MonoBehaviour
@@ -11,12 +12,16 @@ public class Environment : MonoBehaviour
     public float lagBackDestroy = -10f;
     public float leadSpawnDistance = 45f;
     public float scrollSpeed = 100f;
+    public bool gamePaused = true;
     public GameObject roadPrefab;
     public GameObject pitfallPrefab;
     public GameObject pitfall2Prefab;
     public GameObject pitfall3Prefab;
     public GameObject obstaclePrefab;
     public GameObject emptyPrefab;
+    public GameObject grPrefab;
+    public GameObject player;
+    public ParallaxSpawner ps;
     public LinkedList<float>[] mapData;
     public Texture roadTex;
     public int[] lanePitfallDistances;
@@ -42,6 +47,9 @@ public class Environment : MonoBehaviour
                     // keep the scaling and slice date //roadSpan.transform.localScale = new Vector3(1, 1, 1);
                     //a.transform.localScale = new Vector3(a.transform.localScale.x, a.transform.localScale.y, 0);
                     roadSpan.transform.SetParent(transform, false);
+                    GameObject guardRail = Instantiate(grPrefab);
+                    guardRail.transform.position = new Vector3(j + transform.position.x, 0.37f, +transform.position.z);
+                    guardRail.transform.SetParent(transform, false);
                 }
                 b[j] = (Random.Range(0, 10));
                 GameObject a;//= Instantiate(roadPrefab);
@@ -71,7 +79,7 @@ public class Environment : MonoBehaviour
 
                 }
                 Vector3 sc = transform.localScale;
-                a.transform.position = new Vector3(j * sc.x, i * sc.y, 1 - i) + transform.position;
+                a.transform.position = new Vector3(j , i , .1f) + transform.position;
                 a.transform.localScale = new Vector3(1,1,1);
                 //a.transform.localScale = new Vector3(a.transform.localScale.x, a.transform.localScale.y, 0);
                 a.transform.SetParent(transform, false);
@@ -80,12 +88,41 @@ public class Environment : MonoBehaviour
             }
             mapData[i] = new LinkedList<float>(b);
         }
-        
+
+
+
+        for (int j = 0; j < mapLength; j++)
+        {
+            bool isLargePit = true;
+            for (int i = 0; i < numLanes; i++)
+            {
+                if (mapData[i].ToArrayPooled()[j] > 1.45 )
+                {
+                    isLargePit = false;
+                }
+            }
+
+            if (isLargePit)
+            {
+                GameObject lPit = Instantiate(pitfall3Prefab);
+                lPit.transform.position = new Vector3(j, 0, .1f) + transform.position;
+            }
+
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x - scrollSpeed * Time.deltaTime, transform.position.y, transform.position.z);// = scrollSpeed * Time.deltaTime;
+        
+        if (ps.startSpawn)
+        {
+            gamePaused = false;
+        }
+        if (!gamePaused)
+        {
+            transform.position = new Vector3(transform.position.x - scrollSpeed * Time.deltaTime, transform.position.y, transform.position.z);// = scrollSpeed * Time.deltaTime;
+        }
     }
+        
 }

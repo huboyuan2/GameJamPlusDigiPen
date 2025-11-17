@@ -122,6 +122,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &33405030 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5525932007577908842, guid: 0c57cec0736de784e91dca5ffff89bd4, type: 3}
+  m_PrefabInstance: {fileID: 5641634531106631783}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9794a512011274a41bb517d7ac6017f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &84042531 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7443189831847375248, guid: 799246a6ccba1544c831ac59a29b9866, type: 3}
@@ -638,7 +649,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &524549035
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -759,17 +770,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6364007338484371676, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: ps
+      value: 
+      objectReference: {fileID: 33405030}
+    - target: {fileID: 6364007338484371676, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: roadTex
+      value: 
+      objectReference: {fileID: 2800000, guid: 164b53745f063bf429b996e9875eee24, type: 3}
+    - target: {fileID: 6364007338484371676, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: grPrefab
+      value: 
+      objectReference: {fileID: 5573855947680332688, guid: 91b87972f41986a4abe216a0816f50c8, type: 3}
+    - target: {fileID: 6364007338484371676, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: roadPrefab
+      value: 
+      objectReference: {fileID: 2597037568749435352, guid: bcc8960e2193b044584bf65591ad643c, type: 3}
+    - target: {fileID: 6364007338484371676, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: emptyPrefab
+      value: 
+      objectReference: {fileID: 215821583256047414, guid: 54c33f00100236746adada0754bf0201, type: 3}
+    - target: {fileID: 6364007338484371676, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: pitfallPrefab
+      value: 
+      objectReference: {fileID: 3031310934812625113, guid: d9bf9fdd7caea024290278366066fc03, type: 3}
+    - target: {fileID: 6364007338484371676, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: pitfall2Prefab
+      value: 
+      objectReference: {fileID: 2581765077161473082, guid: 9af4c87432c90c740bdba17171dedd10, type: 3}
+    - target: {fileID: 6364007338484371676, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: pitfall3Prefab
+      value: 
+      objectReference: {fileID: 4663051042858671700, guid: ffab42bdf8f6a6242b8c38b84d3834f1, type: 3}
+    - target: {fileID: 6364007338484371676, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: maxPitfallDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134062545946758060, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134062545946758060, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8134062545946758060, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8134062545946758060, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.31
       objectReference: {fileID: 0}
     - target: {fileID: 8134062545946758060, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.39
+      value: -2.18
       objectReference: {fileID: 0}
     - target: {fileID: 8134062545946758060, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.67
+      value: -1.16
       objectReference: {fileID: 0}
     - target: {fileID: 8134062545946758060, guid: 77e2ab92ffce6334db8a64649d8fd666, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1203,12 +1262,15 @@ MonoBehaviour:
   lagBackDestroy: -10
   leadSpawnDistance: 45
   scrollSpeed: 100
+  gamePaused: 1
   roadPrefab: {fileID: 4435869152660240568, guid: 9269c2cc1640fd24aa63ed416b0e40b8, type: 3}
   pitfallPrefab: {fileID: 215821583256047414, guid: 54c33f00100236746adada0754bf0201, type: 3}
   pitfall2Prefab: {fileID: 0}
   pitfall3Prefab: {fileID: 0}
   obstaclePrefab: {fileID: 8716367297084761792, guid: 6198ad4534461f94ea0de6ada6bef7b5, type: 3}
   emptyPrefab: {fileID: 0}
+  grPrefab: {fileID: 0}
+  ps: {fileID: 0}
   roadTex: {fileID: 0}
   lanePitfallDistances: 
 --- !u!114 &1383584894 stripped
@@ -1655,63 +1717,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c57cec0736de784e91dca5ffff89bd4, type: 3}
---- !u!1001 &6290789256691606714
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1534122464051150311, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.4473295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534122464051150311, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.7735232
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534122464051150311, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10.484594
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534122464051150311, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534122464051150311, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534122464051150311, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534122464051150311, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534122464051150311, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534122464051150311, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1534122464051150311, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7854969158939793552, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
-      propertyPath: m_Name
-      value: AudioMgr
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: a60afd29407c6404f87f8eba1afb7c92, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1726,4 +1731,3 @@ SceneRoots:
   - {fileID: 1925792155}
   - {fileID: 248743701}
   - {fileID: 591773079}
-  - {fileID: 6290789256691606714}
