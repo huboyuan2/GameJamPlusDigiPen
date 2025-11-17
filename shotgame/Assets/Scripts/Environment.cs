@@ -106,6 +106,7 @@ public class Environment : MonoBehaviour
             {
                 GameObject lPit = Instantiate(pitfall3Prefab);
                 lPit.transform.position = new Vector3(j, 0, .1f) + transform.position;
+                lPit.transform.SetParent(transform, false);
             }
 
         }
