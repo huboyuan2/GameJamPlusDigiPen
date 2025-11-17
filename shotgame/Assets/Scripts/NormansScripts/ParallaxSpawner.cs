@@ -22,6 +22,14 @@ public class ParallaxSpawner : MonoBehaviour
     [SerializeField] private float frontCooldownBeforeSpawn;
     private float frontTimer = 0.0f;
     private float frontTimeThreshHold;
+    
+    [SerializeField] private GameObject roadLights;
+    [SerializeField] private float roadLightsYOffset;
+    [SerializeField] private float roadLightsYBASEDOffset;
+    [SerializeField] private float roadLightsCooldownBeforeSpawn;
+    private float roadLightsTimer = 0.0f;
+    private float roadLightsTimeThreshHold;
+    
     [SerializeField] private GameObject spawnPoint;
     
     public bool startSpawn = false;
@@ -63,6 +71,14 @@ public class ParallaxSpawner : MonoBehaviour
             frontTimer = 0.0f;
             frontTimeThreshHold = Random.Range(0.3f, frontCooldownBeforeSpawn);
         }
+        
+        roadLightsTimer += Time.deltaTime;
+        if (roadLightsTimer >= roadLightsTimeThreshHold)
+        {
+            spawnRoadLights();
+            roadLightsTimer = 0.0f;
+            roadLightsTimeThreshHold = roadLightsCooldownBeforeSpawn;
+        }
     }
 
     void spawnBackTree()
@@ -84,5 +100,12 @@ public class ParallaxSpawner : MonoBehaviour
         float rand2 = Random.Range(0, frontYOffset);
         Vector3 spawnPos = new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y - frontYBASEDOffset + rand2 - 0.25f, spawnPoint.transform.position.z);
         GameObject spawnedTree = Instantiate(frontTree, spawnPos, Quaternion.identity);
+    }
+    
+    void spawnRoadLights()
+    {
+        float rand2 = Random.Range(0, roadLightsYOffset);
+        Vector3 spawnPos = new Vector3(spawnPoint.transform.position.x, spawnPoint.transform.position.y - roadLightsYBASEDOffset + rand2 - 0.25f, spawnPoint.transform.position.z);
+        GameObject spawnedTree = Instantiate(roadLights, spawnPos, Quaternion.identity);
     }
 }

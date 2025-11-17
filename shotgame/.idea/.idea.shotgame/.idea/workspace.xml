@@ -205,6 +205,18 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../JunkBuild/kkkk\shotgame.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\work\JunkBuild\kkkk" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.62f3\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;C:\work\JamTime 14 Nov\Unity\GameJamPlusDigiPen\shotgame&quot; -debugCodeOptimization" />
@@ -271,7 +283,7 @@
       <workItem from="1763189772174" duration="2071000" />
       <workItem from="1763250685953" duration="19887000" />
       <workItem from="1763284826564" duration="5292000" />
-      <workItem from="1763332660627" duration="2310000" />
+      <workItem from="1763332660627" duration="4587000" />
     </task>
     <servers />
   </component>
