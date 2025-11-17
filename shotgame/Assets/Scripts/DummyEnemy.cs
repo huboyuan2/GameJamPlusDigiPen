@@ -26,10 +26,10 @@ public class DummyEnemy : MonoBehaviour
     void Update()
     {
         // Test with T key
-        if (Input.GetKeyDown(KeyCode.T) && !isDead)
-        {
-            Die();
-        }
+        //if (Input.GetKeyDown(KeyCode.T) && !isDead)
+        //{
+        //    Die();
+        //}
     }
 
     // Call this method when enemy dies
@@ -40,6 +40,7 @@ public class DummyEnemy : MonoBehaviour
 
         if (head != null)
         {
+            SoundMgr.Instance.PlaySound(2, head.transform.position);
             PlayHeadBounceAnimation();
         }
         else

@@ -115,6 +115,7 @@ public class Health : MonoBehaviour
 
     void DamageEffect()
     {
+        SoundMgr.Instance.PlaySound(4, transform.position);
         if (isPlayingDamageEffect) return; // Prevent overlapping effects
 
         isPlayingDamageEffect = true;
@@ -145,7 +146,7 @@ public class Health : MonoBehaviour
     void Die()
     {
         Debug.Log($"[Health] {gameObject.name} died!");
-
+        SoundMgr.Instance.PlaySound(5, transform.position);
         // Hide health bar on death
         if (healthBar != null)
         {
